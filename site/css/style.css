@@ -9,11 +9,6 @@
 }
 
 /* End of styles provided from Jumborton template */
-#searchForm {
-  clear: both;
-}
-
-
 
 
 nav.navbar {
@@ -29,20 +24,22 @@ nav.navbar {
 }
 
 #navbarsExampleDefault {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #navPhoneButton, #navOrderButton {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 form .form-control {
-  font-size: 18px;
+  font-size: 16px;
 }
 
-/*#hero {
-  padding: 100px 0px 0px;
-}*/
+#hero {
+  background-color: black;
+  padding: 80px 5% 15px;
+
+}
 
 #copy {
   text-align: center;
@@ -51,20 +48,60 @@ form .form-control {
 }
 
 #copy h1 {
-  font-size: 30px;
+  font-size: 25px;
+  color: #8B7A53
 }
 
-#copy a {
+#copy a {   /* Buttons on the Jumbotron */
+  color: white;
   background-color: #8B7A53;
+  border: none;
 }
 
-@media (min-width: 1200px) {
-  #copy h1 {
-    font-size: 35px;
+#homeInfo {
+  padding: 0px 5% 0px;
+}
+
+/* --Media query----------------------------------- */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #heroButton a {
+    font-size: 18px;
   }
 }
 
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #copy h1 {
+    font-size: 25px;
+  }
+  #heroButton a {
+    font-size: 18px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #copy h1 {
+    font-size: 32px;
+  }
+  #heroButton a {
+    font-size: 22px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #copy h1 {
+    font-size: 37px;
+  }
+  #heroButton a {
+    font-size: 27px;
+  }
+}
+
+
+/* @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
@@ -74,5 +111,4 @@ form .form-control {
   nav .container, #hero .container {
     margin: 10px;
   }
-}
-
+} */
