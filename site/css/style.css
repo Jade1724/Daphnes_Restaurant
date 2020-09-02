@@ -1,5 +1,5 @@
 /* Styles provided from Jumborton template */
-.bd-placeholder-img {
+/*.bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
   -webkit-user-select: none;
@@ -7,7 +7,7 @@
   -ms-user-select: none;
   user-select: none;
 }
-
+*/
 /* End of styles provided from Jumborton template */
 
 
@@ -25,6 +25,19 @@ nav.navbar {
 
 #navbarsExampleDefault {
   font-size: 16px;
+  text-align: center;
+}
+
+.nav-item .dropdown-menu {
+  font-size: 16px;
+  background-color: #8B7A53;
+  padding: 0px;
+}
+
+.nav-item .dropdown-menu .dropdown-item {
+  color: white;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 #navPhoneButton, #navOrderButton {
@@ -32,7 +45,15 @@ nav.navbar {
 }
 
 form .form-control {
+  position: relative;
   font-size: 16px;
+  width: auto;
+}
+
+.form-control i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 
 #hero {
@@ -49,13 +70,19 @@ form .form-control {
 
 #copy h1 {
   font-size: 25px;
-  color: #8B7A53
+  color: #8B7A53;
 }
 
 #copy a {   /* Buttons on the Jumbotron */
   color: white;
   background-color: #8B7A53;
   border: none;
+}
+
+#menuCarousel .carousel-caption {
+  text-align: left;
+  top: 0px;
+  left: 8%;
 }
 
 #homeInfo {
@@ -65,7 +92,7 @@ form .form-control {
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  #heroButton a {
+  #heroButton a, .carousel-caption h5 {
     font-size: 18px;
   }
 }
@@ -75,7 +102,7 @@ form .form-control {
   #copy h1 {
     font-size: 25px;
   }
-  #heroButton a {
+  #heroButton a, .carousel-caption h5 {
     font-size: 18px;
   }
 }
@@ -85,7 +112,7 @@ form .form-control {
   #copy h1 {
     font-size: 32px;
   }
-  #heroButton a {
+  #heroButton a, .carousel-caption h5 {
     font-size: 22px;
   }
 }
@@ -95,20 +122,7 @@ form .form-control {
   #copy h1 {
     font-size: 37px;
   }
-  #heroButton a {
+  #heroButton a, .carousel-caption h5 {
     font-size: 27px;
   }
 }
-
-
-/* @media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  nav .container, #hero .container {
-    margin: 10px;
-  }
-} */
