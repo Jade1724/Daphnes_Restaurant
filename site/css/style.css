@@ -13,7 +13,13 @@
 
 nav.navbar {
   padding: 0 5% 0;
-  background-color: #890000;
+  background-color: rgba(157, 0, 0, 0.9);
+}
+
+.navbar .navbar-brand {
+  position: relative;
+  left: 50%;
+  margin-left: -75px
 }
 
 .container {
@@ -23,31 +29,45 @@ nav.navbar {
   white-space: nowrap;
 }
 
+#menuBarToggler {
+  position: absolute;
+  left: 5%;
+  top: 12px;
+}
+
 #navbarsExampleDefault {
   font-size: 16px;
   text-align: center;
 }
 
 .nav-item .dropdown-menu {
-  font-size: 16px;
-  background-color: #8B7A53;
+  font-size: 14px;
   padding: 0px;
 }
 
 .nav-item .dropdown-menu .dropdown-item {
-  color: white;
   padding-left: 18px;
   padding-right: 18px;
+}
+
+#navOrderButton {
+  background: none;
+  border: none;
 }
 
 #navPhoneButton, #navOrderButton {
   font-size: 16px;
 }
 
+
+#phone, #searchFromToggler {
+  border: none;
+}
+
+
 form .form-control {
   position: relative;
   font-size: 16px;
-  width: auto;
 }
 
 .form-control i {
@@ -57,8 +77,10 @@ form .form-control {
 }
 
 #hero {
+  border-radius: 0;
   background-color: black;
-  padding: 80px 5% 15px;
+  padding: 80px 5% 80px;
+  position: relative;
 
 }
 
@@ -66,17 +88,24 @@ form .form-control {
   text-align: center;
   margin: auto 0px;
   padding: 0px;
+  position: static;
 }
 
 #copy h1 {
   font-size: 25px;
   color: #8B7A53;
 }
-
-#copy a {   /* Buttons on the Jumbotron */
+#heroButton {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  margin-left: -215px;
+}
+#heroButton a {   /* Buttons on the Jumbotron */
   color: white;
   background-color: #8B7A53;
   border: none;
+  font-size: 28px
 }
 
 #menuCarousel .carousel-caption {
@@ -92,37 +121,92 @@ form .form-control {
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  #heroButton a, .carousel-caption h5 {
-    font-size: 18px;
+  #searchForm .form-control {
+      width: 100%;
   }
+  /* #heroButton a {
+    font-size: 35px;
+  } */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  #searchForm .form-control {
+      width: 100%;
+  }
+  #hero {
+    padding-bottom: 15px;
+  }
   #copy h1 {
     font-size: 25px;
   }
   #heroButton a, .carousel-caption h5 {
     font-size: 18px;
   }
+
+  #heroButton {
+    position: static;
+    margin-left: auto;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  #navOrderButton {
+    background-color: #343A40;
+    border-color: #343A40;
+  }
+  .navbar .navbar-brand {
+    position: static;
+    margin-left: 0;
+  }
+  #hero {
+    padding-bottom: 15px;
+  }
   #copy h1 {
     font-size: 32px;
   }
+  #searchForm {
+    position: absolute;
+    right: 5%;
+    top: 12px;
+  }
   #heroButton a, .carousel-caption h5 {
     font-size: 22px;
+  }
+  #heroButton {
+    position: static;
+    margin-left: auto;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  #navOrderButton {
+    background-color: #343A40;
+    border-color: #343A40;
+  }
+  .navbar .navbar-brand {
+    position: static;
+    margin-left: 0;
+  }
+  #searchForm {
+    position: absolute;
+    right: 5%;
+    top: 12px;
+  }
+  #hero {
+    padding-bottom: 15px;
+  }
   #copy h1 {
     font-size: 37px;
   }
   #heroButton a, .carousel-caption h5 {
     font-size: 27px;
+  }
+  #heroButton {
+    position: static;
+    margin-left: auto;
   }
 }

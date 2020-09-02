@@ -24,9 +24,17 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
         <a class="navbar-brand" href="#"><img src="../logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="menuBarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <div class="pull-right">
+        <a id="phone" class="navbar-toggler" href="tel:021-256-9857"><i class="fas fa-phone"></i></a>
+
+        <button id="searchFromToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#searchForm" aria-controls="searchForm" aria-expanded="false" aria-label="Toggle search form input">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
@@ -44,17 +52,20 @@
               <a class="nav-link" href="#">Contact Us</a>
             </li>
             <li class="nav-item">
-              <button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button>
+              <button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0 d-none d-lg-block" type="submit">Call Us</button>
             </li>
             <li class="nav-item">
               <button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button>
             </li>
           </ul>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="searchForm">
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-            <i class="fas fa-search"></i>
           </form>
-        </div>
+      </div>
     </nav>
 
     <main role="main">
@@ -80,19 +91,19 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="../../shumai.jpg" class="d-block w-100" alt="Image of Shumai">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>First slide label</h5>
               </div>
             </div>
             <div class="carousel-item">
               <img src="../../shumai.jpg" class="d-block w-100" alt="Image of Shumai">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Second slide label</h5>
               </div>
             </div>
             <div class="carousel-item">
               <img src="../../shumai.jpg" class="d-block w-100" alt="Image of Shumai">
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption">
                 <h5>Third slide label</h5>
               </div>
             </div>
@@ -112,18 +123,20 @@
       <div id="homeInfo" class="container-fluid">
         <!-- Example row of columns -->
         <div class="row">
-          <div class="col-md-4">
-            <h2>Heading</h2>
+          <div class="col-md-6">
+            <h2>Customer's Review</h2>
+            <div id="reviewList" class="container-fluid">
+              <div class="row">
             <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <h2>Heading</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <h2>Heading</h2>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
