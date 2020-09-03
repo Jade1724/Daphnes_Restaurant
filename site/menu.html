@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Dinner Menu</title>
     <script defer src="fontawesome/js/all.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -66,12 +66,57 @@
             <input class="form-control" type="text" placeholder="Search" aria-label="Search">
           </form>
       </div>
-    </nav>
+    </nav> <!-- End of Header -->
 
     <main role="main">
+      <div id="menuHero" class="container-fluid">
+      <h2>Vertical Tabs</h2>
+      <p>Click on the buttons inside the tabbed menu:</p>
 
+      <div class="row">
 
+        <div class="tab col-xs-3">
+          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        </div>
 
+        <div id="menuPageList" class="col-xs-9 offset-xs-3">
+        <div id="London" class="tabcontent">
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Paris" class="tabcontent col-xs-9">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p> 
+        </div>
+
+        <div id="Tokyo" class="tabcontent col-xs-9">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+        </div>
+      </div>
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+    </div>
 
     </main>
 
