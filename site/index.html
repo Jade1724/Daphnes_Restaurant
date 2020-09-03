@@ -24,7 +24,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
         <a class="navbar-brand" href="#"><img src="../logo.png"></a>
-        <button id="menuBarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="menuBarToggler" class="navbar-toggler pull-left" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -61,7 +61,7 @@
         </div>
 
 
-        <div class="collapse navbar-collapse" id="searchForm">
+        <div class="collapse navbar-collapse pull-right" id="searchForm">
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control" type="text" placeholder="Search" aria-label="Search">
           </form>
@@ -123,29 +123,36 @@
       <div id="homeInfo" class="container-fluid">
         <!-- Example row of columns -->
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12 col-xs-12">
             <h2>Customer's Review</h2>
-            <div id="reviewList" class="container-fluid">
-              <div class="row">
-            <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials" width="100%"></iframe>
           </div>
-          <div class="col-md-3">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h2>Find Us</h2>
+            <a href="#"><div id="contactsTile"></div></a>
           </div>
-          <div class="col-md-3">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <hr class="d-block d-sm-none">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h2>Open Hours</h2>
+            <ul id="openHoursList">
+              <li>Monday – Sunday</li>
+              <li>Lunch: 11am – 3pm</li>
+              <li>Dinner: 5pm – 10pm</li>
+              <li>Dim sum:  11am – 2:30pm</li>
+            </ul>
           </div>
         </div>
 
         <hr>
 
       </div> <!-- /container -->
+
+      <div id="aboutUs" class="container-fluid">
+        <div class="row">
+          
+        </div>
+        
+      </div>
 
     </main>
 

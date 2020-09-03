@@ -9,34 +9,34 @@
 }
 */
 /* End of styles provided from Jumborton template */
-
+.container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
 nav.navbar {
-  padding: 0 5% 0;
   background-color: rgba(157, 0, 0, 0.9);
 }
 
 .navbar .navbar-brand {
-  position: relative;
+  position: absolute;
   left: 50%;
-  margin-left: -75px
+  margin-left: -75px;
+  top: 7px;
 }
 
-.container {
-  padding: 0px;
-}
+
 .navbar-nav, #copy h1 {
   white-space: nowrap;
 }
 
-#menuBarToggler {
-  position: absolute;
-  left: 5%;
-  top: 12px;
-}
 
 #navbarsExampleDefault {
   font-size: 16px;
+  text-align: center;
+}
+
+#navbarsExampleDefault .dropdown-item {
   text-align: center;
 }
 
@@ -64,24 +64,18 @@ nav.navbar {
   border: none;
 }
 
-
 form .form-control {
-  position: relative;
   font-size: 16px;
 }
 
-.form-control i {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-}
 
 #hero {
   border-radius: 0;
   background-color: black;
-  padding: 80px 5% 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   position: relative;
-
+  margin-bottom: 15px;
 }
 
 #copy {
@@ -114,19 +108,32 @@ form .form-control {
   left: 8%;
 }
 
-#homeInfo {
-  padding: 0px 5% 0px;
+#homeInfo h2 {
+  font-size: 26px;
 }
 
+#contactsTile {
+  background: url('../../../interior-min.JPG') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#openHoursList {
+  list-style-type: none;
+  padding-left: 0px;
+  font-size: 26px;
+}
+  
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #searchForm .form-control {
       width: 100%;
   }
-  /* #heroButton a {
-    font-size: 35px;
-  } */
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -141,13 +148,17 @@ form .form-control {
   #copy h1 {
     font-size: 25px;
   }
-  #heroButton a, .carousel-caption h5 {
+  #heroButton a, .carousel-caption h5, #homeInfo h2 {
     font-size: 18px;
   }
 
   #heroButton {
     position: static;
     margin-left: auto;
+  }
+
+  #openHoursList li{
+    font-size: 13px
   }
 }
 
@@ -170,14 +181,18 @@ form .form-control {
   #searchForm {
     position: absolute;
     right: 5%;
-    top: 12px;
+    top: 50%;
+    margin-top: -26px;
   }
-  #heroButton a, .carousel-caption h5 {
+  #heroButton a, .carousel-caption h5, #homeInfo h2 {
     font-size: 22px;
   }
   #heroButton {
     position: static;
     margin-left: auto;
+  }
+  #openHoursList {
+    font-size: 17px
   }
 }
 
@@ -194,7 +209,8 @@ form .form-control {
   #searchForm {
     position: absolute;
     right: 5%;
-    top: 12px;
+    top: 50%;
+    margin-top: -26px;
   }
   #hero {
     padding-bottom: 15px;
@@ -202,11 +218,14 @@ form .form-control {
   #copy h1 {
     font-size: 37px;
   }
-  #heroButton a, .carousel-caption h5 {
+  #heroButton a, .carousel-caption h5, #homeInfo h2 {
     font-size: 27px;
   }
   #heroButton {
     position: static;
     margin-left: auto;
+  }
+  #openHoursList {
+    font-size: 22px
   }
 }
