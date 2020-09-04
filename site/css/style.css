@@ -112,6 +112,10 @@ form .form-control {
   font-size: 28px
 }
 
+#heroButton a:hover {
+  background-color: #695F40;
+}
+
 #menuCarousel .carousel-caption {
   text-align: left;
   top: 0px;
@@ -132,7 +136,8 @@ form .form-control {
 }
 
 #custormerReview svg {
-  opacity: 0.2;
+  color: #8B7A53;
+  opacity: 0.5;
 }
 
 #custormerReview .fa-quote-left {
@@ -167,8 +172,8 @@ form .form-control {
   font-size: 23px;
 }
 
-#openHoursList li:nth-child(3) {
-  font-size: 0.9rem;
+#openHoursList li:nth-child(3), footer {
+  font-size: 18px;
 }
 
 #aboutUs {
@@ -195,31 +200,41 @@ form .form-control {
 
 #missionStatement {
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   text-align: center;
   font-style: italic;
+  background-color: #8B7A53;
+  color: white;
 }
 
 
 #bookNowButton {
+  color: #890000;
+  border-color: #890000;
   position: fixed;
-  bottom: 9%;
-  right: 5%;
+  bottom: 4%;
+  right: 4%;
+}
+
+#bookNowButton:hover {
+  color: white;
+  background-color: rgba(157, 0, 0, 0.8);
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  background-color: #1F2720;
+  text-align: center;
+  background-color: black;
   padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
   font-size: 0.8rem;
 }
 
 #socialMediaLinks svg {
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin: 0 10% 10px;
 }
+
+
 /* --End of index.html styles---------------------- */
 
 /* --Start of menu.html styles--------------------- */
@@ -252,10 +267,6 @@ footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-  #searchForm .form-control {
-      width: 100%;
-  }
   #hero {
     padding-bottom: 15px;
   }
@@ -275,20 +286,30 @@ footer {
     font-size: 15px
   }
 
+  #openHoursList li:nth-child(3) {
+  font-size: 12px;
+  }
+  #bookNowButton {
+  font-size: 0.8rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #navOrderButton {
     background-color: #343A40;
-    border-color: #343A40;
+    border: 1px solid transparent;
+  }
+  #navOrderButton:hover {
+    background-color: #23272B;
+    border-color: #1D2124;
   }
   .navbar .navbar-brand {
     position: static;
     margin-left: 0;
   }
   #hero {
-    padding-bottom: 15px;
+  padding-top: 109px;
   }
   #copy h1 {
     font-size: 32px;
@@ -309,44 +330,28 @@ footer {
   #openHoursList li, #custormerReview p, #aboutUs p {
     font-size: 19px
   }
+  #openHoursList li:nth-child(3), footer {
+  font-size: 15px;
+}
   #bookNowButton {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  #navOrderButton {
-    background-color: #343A40;
-    border-color: #343A40;
-  }
-  .navbar .navbar-brand {
-    position: static;
-    margin-left: 0;
-  }
+  
   #searchForm {
     position: absolute;
     right: 5%;
     top: 50%;
     margin-top: -26px;
   }
-  #hero {
-    padding-bottom: 15px;
-  }
+  
   #copy h1 {
     font-size: 37px;
   }
   #heroButton a, .carousel-caption h5, #homeInfo h2, #aboutUs h3 {
     font-size: 27px;
-  }
-  #heroButton {
-    position: static;
-    margin-left: auto;
-  }
-  #openHoursList li, #customerReview p, #aboutUs p {
-    font-size: 19px
-  }
-  #bookNowButton {
-  font-size: 2rem;
   }
 }
