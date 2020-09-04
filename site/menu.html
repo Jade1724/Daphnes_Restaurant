@@ -68,54 +68,77 @@
       </div>
     </nav> <!-- End of Header -->
 
+
+
     <main role="main">
       <div id="menuHero" class="container-fluid">
-      <h2>Vertical Tabs</h2>
-      <p>Click on the buttons inside the tabbed menu:</p>
-
-      <div class="row">
-
-        <div class="tab col-xs-3">
-          <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-          <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-          <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+        <div class="info">
+          <h2>Dinner Menu</h2>
+          <span><a class="btn btn-outline-dark btn-md" href="#" role="button">Dim sum menu &raquo;</a>
+          <a class="btn btn-outline-dark btn-md" href="#" role="button">Lunch menu &raquo;</a></span>
         </div>
 
-        <div id="menuPageList" class="col-xs-9 offset-xs-3">
-        <div id="London" class="tabcontent">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+      <div id="stickyMenuNav" class="row">
+        <div class="col-3">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-entree" role="tab" aria-controls="v-pills-home" aria-selected="true">Entry</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-soup" role="tab" aria-controls="v-pills-profile" aria-selected="false">Soup</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-seafood" role="tab" aria-controls="v-pills-messages" aria-selected="false">Seafood</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pork" role="tab" aria-controls="v-pills-settings" aria-selected="false">Pork</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-beefLambVenison" role="tab" aria-controls="v-pills-settings" aria-selected="false">Beef, Lamb, and Venison</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-chickenDuck" role="tab" aria-controls="v-pills-settings" aria-selected="false">Chicken, Duck</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-vegetable" role="tab" aria-controls="v-pills-settings" aria-selected="false">Vegetables</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-riceNoodle" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rice and Noodles</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-dessert" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dessert</a>
+          </div>
         </div>
+        <div class="col-9 offset-3">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-entree" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <img src="https://via.placeholder.com/518x800.png?text=Entree" alt="triangle with all three sides equal" height="800" width="518" />
+            </div>
+            <div class="tab-pane fade" id="v-soup" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <img src="https://via.placeholder.com/518x800.png?text=Soup" alt="triangle with all three sides equal" height="800" width="518" />
+            </div>
+            <div class="tab-pane fade" id="v-seafood" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <img src="https://via.placeholder.com/518x800.png?text=Seafood+1" alt="triangle with all three sides equal" height="800" width="518" />
+              <img src="https://via.placeholder.com/518x800.png?text=Seafood+2" alt="triangle with all three sides equal" height="800" width="518" />
+              <img src="https://via.placeholder.com/518x800.png?text=Seafood+3" alt="triangle with all three sides equal" height="800" width="518" />
+              <img src="https://via.placeholder.com/518x800.png?text=Seafood+4" alt="triangle with all three sides equal" height="800" width="518" />
+              <img src="https://via.placeholder.com/518x800.png.jpg?text=Seafood+5" alt="triangle with all three sides equal" height="800" width="518" />
+            </div>
+            <div class="tab-pane fade" id="v-pork" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <img src="https://via.placeholder.com/518x800.png?text=Pork+1" alt="triangle with all three sides equal" height="800" width="518" />
+              <img src="https://via.placeholder.com/518x800.png?text=Pork+2" alt="triangle with all three sides equal" height="800" width="518" />
+            </div>
+            <div class="tab-pane fade" id="v-beefLambVenison" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <img src="https://via.placeholder.com/518x800.png?text=Beef+Lamb+Venison+1" alt="triangle with all three sides equal" height="800" width="518" />
+              <img src="https://via.placeholder.com/518x800.png?text=Beef+Lamb+Venison+2" alt="triangle with all three sides equal" height="800" width="518" />
+              <img src="https://via.placeholder.com/518x800.png?text=Beef+Lamb+Venison+3" alt="triangle with all three sides equal" height="800" width="518" />
+            </div>
+            <div class="tab-pane fade" id="v-chickenDuck" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <img src="https://via.placeholder.com/518x800.png?text=Chicken+Duck+1" alt="triangle with all three sides equal" height="800" width="518" />
+              <img src="https://via.placeholder.com/518x800.png?text=Chicken+Duck+2" alt="triangle with all three sides equal" height="800" width="518" />
+            </div>
+            <div class="tab-pane fade" id="v-vegetable" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <img src="https://via.placeholder.com/518x800.png?text=Vegetable+1" alt="triangle with all three sides equal" height="800" width="518" />
+              <img src="https://via.placeholder.com/518x800.png?text=Vegetable+2" alt="triangle with all three sides equal" height="800" width="518" />
+            </div>
+            <div class="tab-pane fade" id="v-riceNoodle" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <img src="https://via.placeholder.com/518x800.png?text=Rice+Noodle+1" alt="triangle with all three sides equal" height="800" width="518" />
+              <img src="https://via.placeholder.com/518x800.png?text=Rice+Noodle+2" alt="triangle with all three sides equal" height="800" width="518" />
+            </div>
+            <div class="tab-pane fade" id="v-dessert" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <img src="https://via.placeholder.com/518x800.png?text=Dessert" alt="triangle with all three sides equal" height="800" width="518" />
+            </div>
 
-        <div id="Paris" class="tabcontent col-xs-9">
-          <h3>Paris</h3>
-          <p>Paris is the capital of France.</p> 
-        </div>
 
-        <div id="Tokyo" class="tabcontent col-xs-9">
-          <h3>Tokyo</h3>
-          <p>Tokyo is the capital of Japan.</p>
-        </div>
+          </div>
         </div>
       </div>
-      <script>
-      function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
 
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
-      </script>
+
+
     </div>
 
     </main>
