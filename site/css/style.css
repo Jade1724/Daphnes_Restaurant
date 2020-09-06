@@ -36,7 +36,7 @@ nav.navbar {
 /* #menuBarToggler {
   padding: 6px 18px;
 } */
-.navbar-nav, #copy h1 {
+ #navbarsExampleDefault .navbar-nav, #copy h1 {
   white-space: nowrap;
 }
 
@@ -238,20 +238,26 @@ footer {
 /* --End of index.html styles---------------------- */
 
 /* --Start of menu.html styles--------------------- */
-#menuHero {
-  padding-top: 98px;
-  padding-left: 0px;
-}
-
-#menuHero .info {
-  position: fixed;
-}
 
 #stickyMenuNav {
   position: fixed;
-  top: 200px
+  top: 90px;
+  left: 0;
+  padding-left: 1rem;
 }
 
+#stickyMenuNav a {
+  display: inline-block;
+}
+
+#v-pills-tab .nav-link {
+  font-size: 15px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+/*#v-pills-tabContents img {
+  display: block;
+}*/
 
 
 /* --End of menu.html styles----------------------- */
@@ -286,7 +292,7 @@ footer {
     font-size: 15px
   }
 
-  #openHoursList li:nth-child(3) {
+  #openHoursList li:nth-child(3), footer {
   font-size: 12px;
   }
   #bookNowButton {

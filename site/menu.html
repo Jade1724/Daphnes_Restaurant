@@ -71,28 +71,27 @@
 
 
     <main role="main">
-      <div id="menuHero" class="container-fluid">
-        <div class="info">
+      <div class="container-fluid">
+        <div class="row">
+          <div id="stickyMenuNav" class="col-xs-3">
           <h2>Dinner Menu</h2>
-          <span><a class="btn btn-outline-dark btn-md" href="#" role="button">Dim sum menu &raquo;</a>
-          <a class="btn btn-outline-dark btn-md" href="#" role="button">Lunch menu &raquo;</a></span>
-        </div>
+          <a class="btn btn-outline-dark btn-sm" href="#" role="button">Dim sum menu &raquo;</a>
+          <a class="btn btn-outline-dark btn-sm" href="#" role="button">Lunch menu &raquo;</a>
+        
 
-      <div id="stickyMenuNav" class="row">
-        <div class="col-3">
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-entree" role="tab" aria-controls="v-pills-home" aria-selected="true">Entry</a>
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-soup" role="tab" aria-controls="v-pills-profile" aria-selected="false">Soup</a>
             <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-seafood" role="tab" aria-controls="v-pills-messages" aria-selected="false">Seafood</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pork" role="tab" aria-controls="v-pills-settings" aria-selected="false">Pork</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-beefLambVenison" role="tab" aria-controls="v-pills-settings" aria-selected="false">Beef, Lamb, and Venison</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-chickenDuck" role="tab" aria-controls="v-pills-settings" aria-selected="false">Chicken, Duck</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-beefLambVenison" role="tab" aria-controls="v-pills-settings" aria-selected="false">Beef/Lamb/Venison</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-chickenDuck" role="tab" aria-controls="v-pills-settings" aria-selected="false">Chicken/Duck</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-vegetable" role="tab" aria-controls="v-pills-settings" aria-selected="false">Vegetables</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-riceNoodle" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rice and Noodles</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-riceNoodle" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rice/Noodles</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-dessert" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dessert</a>
           </div>
         </div>
-        <div class="col-9 offset-3">
+        <div class="col-xs-9 col-xs-offset-3">
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-entree" role="tabpanel" aria-labelledby="v-pills-home-tab">
               <img src="https://via.placeholder.com/518x800.png?text=Entree" alt="triangle with all three sides equal" height="800" width="518" />
@@ -131,15 +130,10 @@
             <div class="tab-pane fade" id="v-dessert" role="tabpanel" aria-labelledby="v-pills-messages-tab">
               <img src="https://via.placeholder.com/518x800.png?text=Dessert" alt="triangle with all three sides equal" height="800" width="518" />
             </div>
-
-
-          </div>
-        </div>
-      </div>
-
-
-
-    </div>
+          </div> <!-- .tab-content #v-pills-tabContent -->
+        </div> <!-- .col-xs-9 .offset-xs-3 -->
+      </div> <!-- .row -->
+    </div> <!-- #stickyMenuNav .container-fluid -->
 
     </main>
 
@@ -150,7 +144,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
