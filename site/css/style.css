@@ -12,8 +12,8 @@
 
 /* --Start of index.html styles--------------------- */
 body {
-  min-height: 100vh;
-  padding: 0;
+  min-height: 100%;
+/*  padding: 0;*/
 }
 
 .container-fluid {
@@ -241,20 +241,50 @@ footer {
 
 #stickyMenuNav {
   position: fixed;
-  top: 90px;
+  top: 100px;
   left: 0;
-  padding-left: 1rem;
+}
+
+#jumpToLunch {
+  margin-bottom: 5px;
+
+}
+
+#stickyMenuNav h2 {
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 #stickyMenuNav a {
-  display: inline-block;
+  font-size: 16px;
+  min-width: 160px;
 }
 
 #v-pills-tab .nav-link {
   font-size: 15px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  background-color: #8B7A53;
+  color: white;
+  border-radius: 0;
+  width: 160px;
 }
+
+#v-pills-tab .nav-link.active {
+  background-color: #CCB37B;
+  color: black;
+}
+
+#v-pills-tabContent {
+  margin-left: 160px;
+  margin-top: 100px;
+  margin: 100px 0px 20px 155px;
+}
+
+#v-pills-tabContent div img {
+  width: 100%;
+  max-width: 800px;
+}
+
 /*#v-pills-tabContents img {
   display: block;
 }*/
