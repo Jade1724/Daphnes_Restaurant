@@ -23,14 +23,21 @@ body {
 
 nav.navbar {
   background-color: rgba(157, 0, 0, 0.9);
-  min-height: 83px;
+  padding: 15px;
+  position: relative;
 }
 
 .navbar .navbar-brand {
   position: absolute;
   left: 50%;
   margin-left: -75px;
-  top: 7px;
+  top: 0;
+}
+
+.navbar .navbar-toggler {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 /* #menuBarToggler {
@@ -55,10 +62,6 @@ nav.navbar {
   padding: 0px;
 }
 
-.nav-item .dropdown-menu .dropdown-item {
-  padding-left: 18px;
-  padding-right: 18px;
-}
 
 #navOrderButton {
   background: none;
@@ -82,9 +85,6 @@ form .form-control {
 #hero {
   border-radius: 0;
   background-color: black;
-  padding-top: 98px;
-  padding-bottom: 80px;
-  position: relative;
   margin-bottom: 15px;
 }
 
@@ -92,24 +92,24 @@ form .form-control {
   text-align: center;
   margin: auto 0px;
   padding: 0px;
-  position: static;
 }
 
 #copy h1 {
   font-size: 25px;
   color: #8B7A53;
 }
+
 #heroButton {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  margin-left: -215px;
+  margin-top: 3%;
+  white-space: nowrap;
+  margin-left: auto;
 }
+
 #heroButton a {   /* Buttons on the Jumbotron */
   color: white;
   background-color: #8B7A53;
   border: none;
-  font-size: 28px
+  font-size: 18px
 }
 
 #heroButton a:hover {
@@ -224,10 +224,9 @@ form .form-control {
 footer {
   text-align: center;
   background-color: black;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 5%;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 #socialMediaLinks svg {
@@ -259,12 +258,12 @@ footer {
 }
 
 #stickyMenuNav a {
-  font-size: 16px;
-  min-width: 160px;
+  font-size: 11px;
+  /* min-width: 160px; */
 }
 
 #v-pills-tab .nav-link {
-  font-size: 15px;
+  font-size: 11px;
   padding: 0.4rem 0.5rem;
   background-color: #8B7A53;
   color: white;
@@ -277,9 +276,9 @@ footer {
   color: black;
 }
 
-#v-pills-tabContent {
+/* #v-pills-tabContent {
   margin: 100px 0px 20px 180px;
-}
+} */
 
 #v-pills-tabContent div img {
   width: 100%;
@@ -389,14 +388,14 @@ footer {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  
+
   #searchForm {
     position: absolute;
     right: 5%;
     top: 50%;
     margin-top: -26px;
   }
-  
+
   #copy h1 {
     font-size: 37px;
   }
