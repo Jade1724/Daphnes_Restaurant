@@ -12,8 +12,11 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
 
     <!-- Bootstrap core CSS -->
-    <script type="text/javascript" language="javascript" src="js/jquery-3.5.1.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" language="javascript" src="js/jquery-3.5.1.js"></script> -->
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -23,7 +26,7 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="../logo.png"></a>
+        <a class="navbar-brand" href="index.html"><img src="logo.png"></a>
         <button id="menuBarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,7 +52,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item">
               <button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0 d-none d-lg-block" type="submit">Call Us</button>
@@ -71,7 +74,7 @@
 
 
     <main role="main">
-      <div class="container-fluid">
+      <!-- <div class="container-fluid">
         <div class="row">
           <div class="col-xs-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -80,10 +83,10 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="container-fluid menu-container">
         <div class="row">
-          <div id="stickyMenuNav" class="col-xs-3">
+          <div id="stickyMenuNav">
             <h2>Dinner Menu</h2>
             <!-- <div><a id="jumpToDimsum" class="btn btn-outline-dark btn-sm" href="lunch-menu.html" role="button">Dim sum menu &raquo;</a></div> -->
             <div><a id="jumpToLunch" class="btn btn-outline-dark btn-sm" href="lunch-menu.html" role="button">Lunch menu &raquo;</a></div>
@@ -94,14 +97,14 @@
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-soup" role="tab" aria-controls="v-pills-profile" aria-selected="false">Soup</a>
             <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-seafood" role="tab" aria-controls="v-pills-messages" aria-selected="false">Seafood</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pork" role="tab" aria-controls="v-pills-settings" aria-selected="false">Pork</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-beefLambVenison" role="tab" aria-controls="v-pills-settings" aria-selected="false">Beef/Lamb/Venison</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-beefLambVenison" role="tab" aria-controls="v-pills-settings" aria-selected="false">Beef/Lamb/<br>Venison</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-chickenDuck" role="tab" aria-controls="v-pills-settings" aria-selected="false">Chicken/Duck</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-vegetable" role="tab" aria-controls="v-pills-settings" aria-selected="false">Vegetables</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-riceNoodle" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rice/Noodles</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-dessert" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dessert</a>
           </div>
         </div>
-        <div class="col-xs-9 offset-xs-3">
+          <div class="my-offset-column"></div>
           <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-entree" role="tabpanel" aria-labelledby="v-pills-home-tab">
               <img src="../../entree.jpeg" alt="triangle with all three sides equal" />
@@ -141,7 +144,6 @@
               <img src="../../dessert.jpeg" alt="triangle with all three sides equal" />
             </div>
           </div> <!-- .tab-content #v-pills-tabContent -->
-        </div> <!-- .col-xs-9 .offset-xs-3 -->
       </div> <!-- .row -->
     </div> <!-- #stickyMenuNav .container-fluid -->
 
@@ -153,8 +155,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
   </body>
 </html>
