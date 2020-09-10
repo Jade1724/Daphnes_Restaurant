@@ -4,27 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
-    <title>Dinner Menu</title>
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Jumbotron Template · Bootstrap</title>
     <script defer src="fontawesome/js/all.js"></script>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
 
-    <!-- Bootstrap core CSS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" language="javascript" src="js/jquery-3.5.1.js"></script> -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Favicons -->
 
     <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
-
   <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
         <a class="navbar-brand" href="index.html"><img src="logo.png"></a>
         <button id="menuBarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,10 +51,10 @@
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0 d-none d-lg-block" type="submit">Call Us</button>
+              <a href="tel:021-256-9857"><button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0 d-none d-lg-block" type="submit">Call Us</button></a>
             </li>
             <li class="nav-item">
-              <button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button>
+              <a href="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" target="_blank"><button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button></a>
             </li>
           </ul>
         </div>
@@ -74,22 +70,13 @@
 
 
     <main role="main">
-      <!-- <div class="container-fluid">
+      <div class="container-fluid main-start">
         <div class="row">
-          <div class="col-xs-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="col-xs-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-        </div>
-      </div> -->
-      <div class="container-fluid menu-container">
-        <div class="row">
-          <div id="stickyMenuNav">
-            <h2>Dinner Menu</h2>
-            <!-- <div><a id="jumpToDimsum" class="btn btn-outline-dark btn-sm" href="lunch-menu.html" role="button">Dim sum menu &raquo;</a></div> -->
-            <div><a id="jumpToLunch" class="btn btn-outline-dark btn-sm" href="lunch-menu.html" role="button">Lunch menu &raquo;</a></div>
+          <div id="stickyMenuNav" class="col-3">
+            <h1>Dinner Menu</h1>
+            <div id="switchMenu">
+              <a href="lunch-menu.html">Lunch menu &raquo;</a>
+            </div>
 
 
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -103,9 +90,9 @@
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-riceNoodle" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rice/Noodles</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-dessert" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dessert</a>
           </div>
+          <button id="menuDownload" class="btn btn-dark btn-sm mt-1 ml-1" type="submit">Download Menu</button>
         </div>
-          <div class="my-offset-column"></div>
-          <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-content col-9 offset-3" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-entree" role="tabpanel" aria-labelledby="v-pills-home-tab">
               <img src="../../entree.jpeg" alt="triangle with all three sides equal" />
             </div>
@@ -144,6 +131,8 @@
               <img src="../../dessert.jpeg" alt="triangle with all three sides equal" />
             </div>
           </div> <!-- .tab-content #v-pills-tabContent -->
+
+
       </div> <!-- .row -->
     </div> <!-- #stickyMenuNav .container-fluid -->
 
@@ -151,12 +140,14 @@
 
     <footer>
       <div>All rights reserved &copy; 2019 Daphne's Company Limited</div>
+      <div><a href="terms-and-conditions.html">Terms and Conditions</a></div>
     </footer>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
-  </body>
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </html>
+
+
+

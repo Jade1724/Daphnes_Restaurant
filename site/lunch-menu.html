@@ -71,28 +71,28 @@
 
 
     <main role="main">
-      <div class="container-fluid menu-container">
+      <div class="container-fluid main-start">
         <div class="row">
-          <div id="stickyMenuNav" class="col-xs-3">
-            <h2>Lunch Menu</h2>
-            <!-- <div><a id="jumpToDimsum" class="btn btn-outline-dark btn-sm" href="#" role="button">Dim sum menu &raquo;</a></div> -->
-            <div><a id="jumpToLunch" class="btn btn-outline-dark btn-sm" href="dinner-menu.html" role="button">Dinner menu &raquo;</a></div>
-
+          <div id="stickyMenuNav" class="col-3">
+            <h1>Lunch Menu</h1>
+            <div id="switchMenu">
+              <a href="dinner-menu.html">Dinner menu &raquo;</a>
+            </div>
 
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-entree" role="tab" aria-controls="v-pills-home" aria-selected="true">Entry</a>
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-soup" role="tab" aria-controls="v-pills-profile" aria-selected="false">Soup</a>
             <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-seafood" role="tab" aria-controls="v-pills-messages" aria-selected="false">Seafood</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pork" role="tab" aria-controls="v-pills-settings" aria-selected="false">Pork</a>
-            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-beefLambVenison" role="tab" aria-controls="v-pills-settings" aria-selected="false">Beef/Lamb/Venison</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-beefLambVenison" role="tab" aria-controls="v-pills-settings" aria-selected="false">Beef/Lamb/<br>Venison</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-chickenDuck" role="tab" aria-controls="v-pills-settings" aria-selected="false">Chicken/Duck</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-vegetable" role="tab" aria-controls="v-pills-settings" aria-selected="false">Vegetables</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-riceNoodle" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rice/Noodles</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-dessert" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dessert</a>
           </div>
+          <button id="menuDownload" class="btn btn-dark btn-sm mt-1 ml-1" type="submit">Download Menu</button>
         </div>
-        <div class="col-xs-9 offset-xs-3">
-          <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-content col-9 offset-3" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-entree" role="tabpanel" aria-labelledby="v-pills-home-tab">
               <img src="../../entree.jpeg" alt="triangle with all three sides equal" />
             </div>
@@ -131,7 +131,6 @@
               <img src="../../dessert.jpeg" alt="triangle with all three sides equal" />
             </div>
           </div> <!-- .tab-content #v-pills-tabContent -->
-        </div> <!-- .col-xs-9 .offset-xs-3 -->
       </div> <!-- .row -->
     </div> <!-- #stickyMenuNav .container-fluid -->
 
@@ -139,6 +138,7 @@
 
     <footer>
       <div>All rights reserved &copy; 2019 Daphne's Company Limited</div>
+      <div><a href="terms-and-conditions.html">Terms and Conditions</a></div>
     </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->

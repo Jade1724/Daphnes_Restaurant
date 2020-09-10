@@ -21,9 +21,14 @@ body {
   padding-right: 5%;
 }
 
+.container-fluid.main-start {
+  margin-top: 65px;
+  padding-top: 2%;
+}
+
 nav.navbar {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  /*padding-top: 18px;
+  padding-bottom: 18px;*/
   background-color: rgba(157, 0, 0, 0.9);
 /*  padding: 15px;   Test on Linux machine again before deleting*/
 
@@ -33,7 +38,8 @@ nav.navbar {
   position: absolute;
   left: 50%;
   margin-left: -75px;
-  top: 0;
+  top: 6px;
+  padding: 0;
 }
 
 .navbar .navbar-toggler {
@@ -88,8 +94,7 @@ nav.navbar {
   border-radius: 0;
   background-color: black;
   margin-bottom: 15px;
-  padding-top: 70px;
-  padding-bottom: 3%;
+  padding-bottom: 2%;
 }
 
 #copy {
@@ -104,7 +109,7 @@ nav.navbar {
 }
 
 #heroButton {
-  margin-top: 3%;
+  margin-top: 2%;
   white-space: nowrap;
   /*margin-left: auto;*/
 }
@@ -177,7 +182,7 @@ nav.navbar {
   font-size: 23px;
 }
 
-.open-hours-list li:nth-child(3), footer {
+.open-hours-list li:nth-child(3) {
   font-size: 18px;
 }
 
@@ -231,7 +236,16 @@ footer {
   background-color: black;
   padding: 20px 5%;
   color: white;
-  font-size: 0.7rem;
+  font-size: 11px;
+}
+
+footer a {
+  color: grey;
+}
+
+footer a:hover, footer a:active {
+  color: white;
+  text-decoration: none;
 }
 
 #socialMediaLinks svg {
@@ -241,39 +255,39 @@ footer {
 
 /* --End of index.html styles---------------------- */
 
-/* --Start of menu.html styles--------------------- */
+/* --Start of dinner-menu.html and lunch-menu.html styles--------------------- */
 
-.container-fluid.menu-container {
-  padding-left: 0;
-  padding-top: 70px;
-}
+
 #stickyMenuNav {
   position: fixed;
-  top: 100px;
   left: 0;
-  width: 20%;
+  padding: 0;
 }
 
-#jumpToLunch {
-  margin-bottom: 5px;
+#stickyMenuNav h1 {
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
-#stickyMenuNav h2 {
-  font-size: 1.1rem;
+#stickyMenuNav h1, #switchMenu {
   text-align: center;
 }
 
-#stickyMenuNav a {
-  font-size: 11px;
-  /* min-width: 160px; */
+#switchMenu {
+  margin-bottom: 3%;
+  font-size: 8px;
+}
+
+#switchMenu a {
+  color: #8C6500;
 }
 
 #v-pills-tab .nav-link {
   font-size: 11px;
-  padding: 0.4rem 0.5rem;
   background-color: #8B7A53;
   color: white;
   border-radius: 0;
+  padding: 4% 5%;
 }
 
 #v-pills-tab .nav-link.active {
@@ -281,25 +295,20 @@ footer {
   color: black;
 }
 
-/* #v-pills-tabContent {
-  margin: 100px 0px 20px 180px;
-} */
-
-.my-offset-column {
-  width: 25%;
+#menuDownload {
+  font-size: 11px;
 }
 
-#v-pills-tabContent {
-  width: 75%;
-}
-
+ #v-pills-tabContent {
+  padding-right: 0;
+} 
 #v-pills-tabContent div img {
- width: 100%;
-  /*max-width: 800px;*/
+  width: 100%;
 }
-
-
 /* --End of menu.html styles----------------------- */
+
+/* --Start of contact.html styles------------------- */
+
 
 
 /* --Media query----------------------------------- */
@@ -311,13 +320,22 @@ footer {
   #heroButton a {
   font-size: 20px
   }
+  #stickyMenuNav h1 {
+  font-size: 22px;
+  }
+  #switchMenu {
+  font-size: 12px;
+  }
+  #v-pills-tab .nav-link, #menuDownload {
+  font-size: 14px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  #hero {
+  /*#hero {
     padding-bottom: 15px;
-  }
+  }*/
   #copy h1 {
     font-size: 25px;
   }
@@ -328,11 +346,20 @@ footer {
     font-size: 15px
   }
 
-  .open-hours-list li:nth-child(3), footer {
+  .open-hours-list li:nth-child(3) {
   font-size: 12px;
   }
   #bookNowButton {
   font-size: 0.8rem;
+  }
+  #stickyMenuNav h1 {
+  font-size: 28px;
+  }
+  #switchMenu {
+  font-size: 14px;
+  }
+  #v-pills-tab .nav-link, #menuDownload {
+  font-size: 16px;
   }
 }
 
@@ -352,9 +379,7 @@ footer {
   .navbar .navbar-brand {
     position: static;
     margin-left: 0;
-  }
-  #hero {
-  padding-top: 109px;
+    margin-top: 0;
   }
   #copy h1 {
     font-size: 32px;
@@ -368,7 +393,6 @@ footer {
   #heroButton a, .carousel-caption h5, #homeInfo h2, #aboutUs h3 {
     font-size: 22px;
   }
-
   .open-hours-list li, #custormerReview p, #aboutUs p {
     font-size: 19px
   }
@@ -379,20 +403,27 @@ footer {
   font-size: 1.3rem;
   }
 
+  .container-fluid.main-start {
+  margin-top: 79px;
+}
   #stickyMenuNav h2 {
   font-size: 1.5rem;
   }
 
   #stickyMenuNav a {
     font-size: 19px;
-    width: 200px;
   }
   #v-pills-tab .nav-link {
     font-size: 18px;
-    width: 200px;
   }
-  #v-pills-tabContent {
-  margin-left: 220px;
+  #stickyMenuNav h1 {
+  font-size: 30px;
+  }
+  #switchMenu {
+  font-size: 16px;
+  }
+  #v-pills-tab .nav-link, #menuDownload {
+  font-size: 18px;
   }
 }
 
