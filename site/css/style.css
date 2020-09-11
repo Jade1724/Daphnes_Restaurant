@@ -239,7 +239,7 @@ footer {
   font-size: 11px;
 }
 
-footer a {
+footer span, footer a {
   color: grey;
 }
 
@@ -256,31 +256,33 @@ footer a:hover, footer a:active {
 /* --End of index.html styles---------------------- */
 
 /* --Start of dinner-menu.html and lunch-menu.html styles--------------------- */
+.container-fluid.main-start.menu-container {
+  padding-left: 0;
+  padding-right: 0;
+}
 
+.menu-container .row {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 #stickyMenuNav {
   position: fixed;
   left: 0;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #stickyMenuNav h1 {
   font-size: 20px;
-  margin-bottom: 0;
 }
 
 #stickyMenuNav h1, #switchMenu {
   text-align: center;
 }
 
-#switchMenu {
-  margin-bottom: 3%;
-  font-size: 8px;
-}
 
-#switchMenu a {
-  color: #8C6500;
-}
+
 
 #v-pills-tab .nav-link {
   font-size: 11px;
@@ -295,15 +297,28 @@ footer a:hover, footer a:active {
   color: black;
 }
 
-#menuDownload {
-  font-size: 11px;
+#switchMenu {
+  margin-top: 5%;
+  font-size: 6px;
 }
 
- #v-pills-tabContent {
-  padding-right: 0;
+#switchMenu a {
+  color: #8C6500;
+}
+
+#v-pills-tabContent {
+  padding-left: 0;
 } 
+
 #v-pills-tabContent div img {
   width: 100%;
+}
+
+footer.menu-footer {
+  text-align: left;
+}
+#menuDownload {
+  font-size: 8px;
 }
 /* --End of menu.html styles----------------------- */
 

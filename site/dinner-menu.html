@@ -70,13 +70,11 @@
 
 
     <main role="main">
-      <div class="container-fluid main-start">
+      <div class="container-fluid main-start menu-container">
         <div class="row">
           <div id="stickyMenuNav" class="col-3">
             <h1>Dinner Menu</h1>
-            <div id="switchMenu">
-              <a href="lunch-menu.html">Lunch menu &raquo;</a>
-            </div>
+            
 
 
           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -90,7 +88,11 @@
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-riceNoodle" role="tab" aria-controls="v-pills-settings" aria-selected="false">Rice/Noodles</a>
             <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-dessert" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dessert</a>
           </div>
-          <button id="menuDownload" class="btn btn-dark btn-sm mt-1 ml-1" type="submit">Download Menu</button>
+
+          <div id="switchMenu">
+              <a href="lunch-menu.html">Go to Lunch Menu &raquo;</a>
+            </div>
+          
         </div>
           <div class="tab-content col-9 offset-3" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="v-entree" role="tabpanel" aria-labelledby="v-pills-home-tab">
@@ -138,9 +140,15 @@
 
     </main>
 
-    <footer>
-      <div>All rights reserved &copy; 2019 Daphne's Company Limited</div>
-      <div><a href="terms-and-conditions.html">Terms and Conditions</a></div>
+    <footer class="menu-footer">
+      <button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download Dinner Menu</button>
+      <div >All rights reserved &copy; 2019 Daphne's Company Limited</div>
+      <div>
+        <span><a href="terms-and-conditions.html">Terms and Conditions</a></span>
+        <span>|</span>
+        <span><a href="terms-and-conditions.html">Privacy Policy</a></span>
+      </div>
+
     </footer>
 
 
