@@ -323,10 +323,6 @@ footer.menu-footer {
 /* --End of menu.html styles----------------------- */
 
 /* --Start of contact.html styles------------------- */
-/*#bookingForm label {
-  vertical-align: center;
-}
-*/
 #hoursAndLocation h5, #bookingOptions h5 {
   font-size: 26px;
   margin-bottom: 0.2rem;
@@ -383,6 +379,12 @@ footer.menu-footer {
 #bookingForm button:hover {
   background-color: #695F40;
 }
+
+#anchorTab {
+  position: fixed;
+  top: 75px;
+}
+
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -448,6 +450,9 @@ footer.menu-footer {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .container-fluid.main-start {
+  margin-top: 79px;
+  }
   #navbarsExampleDefault li:nth-child(1) {
     margin-top: 0;
   }
@@ -481,14 +486,10 @@ footer.menu-footer {
   }
   .open-hours-list li:nth-child(3), footer {
   font-size: 15px;
-}
+  }
   #bookNowButton {
   font-size: 1.3rem;
   }
-
-  .container-fluid.main-start {
-  margin-top: 79px;
-}
   #stickyMenuNav h2 {
   font-size: 1.5rem;
   }
@@ -514,6 +515,10 @@ footer.menu-footer {
   #legalLink {
   text-align: right;
   font-size: 16px;
+  }
+  #anchorTab {
+  position: fixed;
+  top: 89px;
   }
 }
 
