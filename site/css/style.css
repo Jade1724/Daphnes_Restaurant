@@ -158,7 +158,7 @@ nav.navbar {
 #custormerReview .fa-quote-right {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 10%;
 }
 
 #custormerReview p {
@@ -323,38 +323,26 @@ footer.menu-footer {
 /* --End of menu.html styles----------------------- */
 
 /* --Start of contact.html styles------------------- */
-#hoursAndLocation h5, #bookingOptions h5 {
+#hoursAndLocation h5 {
   font-size: 26px;
-  margin-bottom: 0.2rem;
 }
 
 #hoursAndLocation p {
   font-size: 23px;
 }
 
-#bookingOptions h6 {
-  font-size: 21px;
-  margin-bottom: 0.2rem;
+#bookingForm h5 {
+  font-size: 26px;
+  text-align: center;
 }
 
-#bookingOptions h6 a {
-  color: #212529;
+#bookingForm form {
+  font-size: 23px;
 }
 
-#bookingOptions li {
-  font-size: 16px;
-  line-height: 1.0;
-}
-
-#bookingForm label {
-  margin-bottom: 0.2rem;
-}
 
 #bookingForm .form-control, #bookingForm .custom-select {
-  height: 1.5rem;
-  font-size: 16px;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  font-size: 18px;
 }
 
 #legalLink {
@@ -371,7 +359,6 @@ footer.menu-footer {
 }
 
 #bookingForm button {
-  font-size: 18px;
   background-color: #8B7A53;
   border: none; 
 }
@@ -440,12 +427,13 @@ footer.menu-footer {
   #v-pills-tab .nav-link, #menuDownload {
   font-size: 16px;
   }
-  #hoursAndLocation {
-  border-left: solid #212529 1px;
+  #hoursAndLocation .open-hours-list {
+  font-size: 23px;
   }
-  #hoursAndLocation p {
-  font-size: 15px;
+  #hoursAndLocation .open-hours-list li:nth-child(3) {
+  font-size: 18px;
   }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -509,9 +497,6 @@ footer.menu-footer {
   #v-pills-tab .nav-link, #menuDownload {
   font-size: 18px;
   }
-  #hoursAndLocation p, #bookingOptions li, #bookingForm .form-control, #bookingForm .custom-select {
-  font-size: 19px;
-  }
   #legalLink {
   text-align: right;
   font-size: 16px;
@@ -537,5 +522,8 @@ footer.menu-footer {
   }
   #heroButton a, .carousel-caption h5, #homeInfo h2, #aboutUs h3 {
     font-size: 27px;
+  }
+  #hoursAndLocation {
+  border-left: solid rgba(0, 0, 0, 0.1) 1px;
   }
 }
