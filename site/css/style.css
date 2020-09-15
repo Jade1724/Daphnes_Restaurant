@@ -176,13 +176,13 @@ nav.navbar {
   margin-bottom: 15px;
 }
 
-.open-hours-list {
+#homeInfo ul {
   list-style-type: none;
   padding-left: 0px;
   font-size: 23px;
 }
 
-.open-hours-list li:nth-child(3) {
+#homeInfo li:nth-child(3) {
   font-size: 18px;
 }
 
@@ -282,8 +282,6 @@ footer a:hover, footer a:active {
 }
 
 
-
-
 #v-pills-tab .nav-link {
   font-size: 11px;
   background-color: #8B7A53;
@@ -308,7 +306,7 @@ footer a:hover, footer a:active {
 
 #v-pills-tabContent {
   padding-left: 0;
-} 
+}
 
 #v-pills-tabContent div img {
   width: 100%;
@@ -327,8 +325,16 @@ footer.menu-footer {
   font-size: 26px;
 }
 
-#hoursAndLocation p {
+#hoursAndLocation p, #openHoursList {
   font-size: 23px;
+}
+
+#openHoursList {
+  list-style-type: none;
+  padding-left: 0;
+}
+#openHoursList li:nth-child(3) {
+  font-size: 18px;
 }
 
 #bookingForm h5 {
@@ -360,7 +366,7 @@ footer.menu-footer {
 
 #bookingForm button {
   background-color: #8B7A53;
-  border: none; 
+  border: none;
 }
 
 #bookingForm button:hover {
@@ -408,11 +414,11 @@ footer.menu-footer {
   #heroButton a, .carousel-caption h5, #homeInfo h2, #aboutUs h3 {
     font-size: 18px;
   }
-  .open-hours-list li, #custormerReview p, #aboutUs p {
+  #homeInfo li, #custormerReview p, #aboutUs p {
     font-size: 15px
   }
 
-  .open-hours-list li:nth-child(3) {
+  #homeInfo li:nth-child(3) {
   font-size: 12px;
   }
   #bookNowButton {
@@ -427,10 +433,10 @@ footer.menu-footer {
   #v-pills-tab .nav-link, #menuDownload {
   font-size: 16px;
   }
-  #hoursAndLocation .open-hours-list {
+  #openHoursList {
   font-size: 23px;
   }
-  #hoursAndLocation .open-hours-list li:nth-child(3) {
+  #openHoursList li:nth-child(3) {
   font-size: 18px;
   }
 
@@ -469,10 +475,10 @@ footer.menu-footer {
   #heroButton a, .carousel-caption h5, #homeInfo h2, #aboutUs h3 {
     font-size: 22px;
   }
-  .open-hours-list li, #custormerReview p, #aboutUs p {
+  #homeInfo li, #custormerReview p, #aboutUs p {
     font-size: 19px
   }
-  .open-hours-list li:nth-child(3), footer {
+  #homeInfo li:nth-child(3), footer {
   font-size: 15px;
   }
   #bookNowButton {
