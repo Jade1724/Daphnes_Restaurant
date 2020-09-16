@@ -11,9 +11,8 @@
 /* End of styles provided from Jumborton template */
 
 /* --Start of index.html styles--------------------- */
-body {
-  min-height: 100%;
-/*  padding: 0;*/
+html, body, main {
+  height: 100%;
 }
 
 .container-fluid {
