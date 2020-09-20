@@ -370,9 +370,24 @@ footer.menu-footer {
   background-color: #695F40;
 }
 
+/* --End of contact.html styles----------------- */
+
+/* --Start of terms-and-conditions.html styles------------------- */
 #anchorTab {
   position: fixed;
   top: 75px;
+  text-align: center;
+}
+
+#anchorTab .tab-container {
+  background-color: #343a40;
+  border-radius: 5px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#legalContents {
+  top: 140px;
 }
 
 /* --Media query----------------------------------- */
