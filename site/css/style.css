@@ -1,14 +1,13 @@
-/* Styles provided from Jumborton template */
-/*.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+/* Custom style sheet for Daphnes_Restaurant/site/
+    > index.html
+    > lunch-menu.html
+    > dinner-menu.html
+    > contact.htnl
+    > terms-and-conditions.html
+
+    Author: Haruka Ichinose
+    Date of creation: 25/08/2020
 */
-/* End of styles provided from Jumborton template */
 
 /* --Start of index.html styles--------------------- */
 html, body, main {
