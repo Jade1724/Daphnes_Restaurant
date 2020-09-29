@@ -257,6 +257,14 @@ footer a:hover, footer a:active {
   padding-right: 0;
 }
 
+.lunch-menu-container h1 {
+  display: inline;
+}
+
+#lunchMenuImage {
+  width: 100%;
+}
+
 .menu-container .row {
   margin-left: 0;
   margin-right: 0;
@@ -542,5 +550,11 @@ footer.menu-footer {
   }
   #hoursAndLocation {
   border-left: solid rgba(0, 0, 0, 0.1) 1px;
+  }
+}
+
+@media (min-aspect-ratio: 4/3) {
+  #v-pills-tab .nav-link br {
+    display: none;
   }
 }
