@@ -285,18 +285,24 @@ footer a:hover, footer a:active {
   text-align: center;
 }
 
+#v-pills-tab {
+  border: 2px solid #343A40;
+}
 
 #v-pills-tab .nav-link {
   font-size: 11px;
-  background-color: #8B7A53;
+  background-color: #343A40;
   color: white;
   border-radius: 0;
   padding: 4% 5%;
 }
 
+#v-pills-tab .nav-link:hover {
+  background-color: grey;
+}
 #v-pills-tab .nav-link.active {
-  background-color: #CCB37B;
-  color: black;
+  background-color: white;
+  color: #343A40;
 }
 
 #switchMenu {
