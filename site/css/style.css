@@ -11,7 +11,7 @@
 
 /* --Start of index.html styles--------------------- */
 html, body, main {
-  height: 100%;
+  min-height: 100vw;
 }
 
 .container-fluid {
@@ -268,20 +268,20 @@ footer a:hover, footer a:active {
 .menu-container .row {
   margin-left: 0;
   margin-right: 0;
+  height: 100vw;
 }
 
-#stickyMenuNav {
-  position: fixed;
-  left: 0;
+#verticalMenuNav {
   padding-left: 0;
   padding-right: 0;
+  height: inherit;
 }
 
-#stickyMenuNav h1 {
+#verticalMenuNav h1 {
   font-size: 20px;
 }
 
-#stickyMenuNav h1, #switchMenu {
+#verticalMenuNav h1, #switchMenu {
   text-align: center;
 }
 
@@ -316,6 +316,12 @@ footer a:hover, footer a:active {
 
 #v-pills-tabContent {
   padding-left: 0;
+  height: inherit;
+}
+
+#v-pills-tabContent .tab-pane {
+  height: 100%;
+  overflow: scroll;
 }
 
 #v-pills-tabContent div img {
@@ -412,7 +418,7 @@ footer.menu-footer {
   #heroButton a {
   font-size: 20px
   }
-  #stickyMenuNav h1 {
+  #verticalMenuNav h1 {
   font-size: 22px;
   }
   #switchMenu {
@@ -449,7 +455,7 @@ footer.menu-footer {
   #bookNowButton {
   font-size: 0.8rem;
   }
-  #stickyMenuNav h1 {
+  #verticalMenuNav h1 {
   font-size: 28px;
   }
   #switchMenu {
@@ -509,17 +515,17 @@ footer.menu-footer {
   #bookNowButton {
   font-size: 1.3rem;
   }
-  #stickyMenuNav h2 {
+  #verticalMenuNav h2 {
   font-size: 1.5rem;
   }
 
-  #stickyMenuNav a {
+  #verticalMenuNav a {
     font-size: 19px;
   }
   #v-pills-tab .nav-link {
     font-size: 18px;
   }
-  #stickyMenuNav h1 {
+  #verticalMenuNav h1 {
   font-size: 30px;
   }
   #switchMenu {
