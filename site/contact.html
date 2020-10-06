@@ -69,223 +69,57 @@
     </nav> <!-- Navigation bar -->
 
   <main role="main">
+  <div class="dummy-block"></div>
 
   <div class="container-fluid main-start">
 
     <div class="row">
-      <div id="hoursAndLocation" class="col-xl-4 order-xl-2 mb-md-auto">
-        <div class="row">
-          <div class="col-sm-6 col-xl-12">
-            <h5>OPENING HOURS</h5>
-            <ul id="openHoursList">
-              <li>Open 7 Days</li>
-              <li>Lunch: 11am – 3pm</li>
-              <li>(&#42;&#42;Dim sum:  11am – 2:30pm)</li>
-              <li>Dinner: 5pm – 10pm</li>
-            </ul>
-            <hr class="d-block d-sm-none">
-          </div>
-
-          <div class="col-sm-6 col-xl-12">
-            <h5>LOCATION</h5>
-            <p>398 Riccarton Rd, Upper Riccarton, Christchurch 8041</p>
+       <div id="contactDetails" class="col-sm-6 col-xl-4">
+        <h5>CONTACTS</h5>
+        <ul id="contactDetailsList">
+          <li>Call: <a href="tel:021-256-9857">021-256-9857</a></li>
+          <li>Email: <a href="mailto:haruka.i1419@gmail.com">haruka.i1419@gmail.com</a></li>
+          <li>Socail Media:
             <div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23138.462363248804!2d172.58246429848646!3d-43.53762547123541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9c55362a077b80e!2sDaphne&#39;s%20Restaurant!5e0!3m2!1sen!2snz!4v1600082639822!5m2!1sen!2snz" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <a href="https://www.facebook.com/daphnesrestaurantchristchurch/" target="_blank"><span class="fab fa-facebook-square fa-3x"></span></a>
+              <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g255118-d5111546-Reviews-Daphnes_Restaurant-Christchurch_Canterbury_Region_South_Island.html?m=19905" target="_blank"><span class="fab fa-tripadvisor fa-3x"></span></a>
             </div>
-            <!-- <hr class="d-block d-sm-none"> -->
-          </div>
-        </div>
-        <hr class="d-block d-xl-none">
+          </li>
+        </ul>
+        <hr class="d-block d-sm-none">
+      </div>
+      <div id="openHours" class="col-sm-6 col-xl-4">
+        <h5>OPENING HOURS</h5>
+        <ul id="openHoursList">
+          <li>Open 7 Days</li>
+          <li>Lunch: 11am – 3pm</li>
+          <li>(&#42;&#42;Dim sum:  11am – 2:30pm)</li>
+          <li>Dinner: 5pm – 10pm</li>
+        </ul>
+        <hr class="d-block d-sm-none">
       </div>
 
-      <div id="bookingForm" class="col-xl-8 order-xl-1 mb-2">
-        <h5>BOOKING</h5>
-        <form class="needs-validation" novalidate>
-          <div class="row mb-2">
-            <div class="col-md-4">
-              <label>Full name:</label>
-            </div>
-            <div class="col-sm-6 col-md-4 mb-1 mb-md-0">
-              <input type="text" class="form-control" id="firstName" placeholder="First name" value="" required>
-              <div class="invalid-feedback">
-                Valid first name is required.
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <input type="text" class="form-control" id="lastName" placeholder="Last name" value="" required>
-              <div class="invalid-feedback">
-                Valid last name is required.
-              </div>
-            </div>
-          </div>
-
-
-        <div class="row mb-2">
-          <div class="col-md-4">
-            <label for="email">Email:</label>
-          </div>
-          <div class="col-md-8">
-            <input type="email" class="form-control" id="email">
-            <div class="invalid-feedback">
-              Please enter a valid email address.
-            </div>
-          </div>
+      <div id="location" class="col-xl-4">
+        <hr class="d-none d-sm-block d-lg-none">
+        <h5>LOCATION</h5>
+        <p>398 Riccarton Rd, Upper Riccarton, Christchurch 8041</p>
+        <div class="embed-responsive embed-responsive-21by9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23138.462363248804!2d172.58246429848646!3d-43.53762547123541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9c55362a077b80e!2sDaphne&#39;s%20Restaurant!5e0!3m2!1sen!2snz!4v1600082639822!5m2!1sen!2snz" height="100%" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
+      </div>
+    </div>
+  </div>
+    <div class="dummy-block"></div>
+    </main>
 
-        <div class="row mb-2">
-          <div class="col-md-4">
-            <label for="address">Mobile Number:</label>
-          </div>
-          <div class="col-sm-6 col-md-5 mb-1 mb-sm-0">
-            <input type="text" class="form-control" id="mobileNumber" required>
-            <div class="invalid-feedback">
-              Please enter your mobile number.
-            </div>
-          </div>
-          <div id="legalLink" class="col-md-3">
-            <a href="terms-and-conditions.html#privacyPolicy">Privacy Policy</a>
-          </div>
-        </div>
-
-        <div class="row mb-2">
-          <div class="col-md-4">
-            <label for="address">Number of Guests:</label>
-          </div>
-          <div class="col-3 col-md-3">
-            <input type="text" class="form-control" id="guestsSize" required>
-            <div class="invalid-feedback">
-              Please enter the number of guests.
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-2">
-          <div class="col-md-4">
-            <label for="country">Date:</label>
-          </div>
-          <div class="col-4 col-md-2">
-            <select class="custom-select d-block w-100" id="bookingDate" required>
-              <option value="">DD</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-              <option>13</option>
-              <option>14</option>
-              <option>15</option>
-              <option>16</option>
-              <option>17</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-              <option>31</option>
-            </select>
-          </div>
-          <div class="col-4 col-md-2">
-            <select class="custom-select d-block w-100" id="bookingMonth" required>
-              <option value="">MM</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-            </select>
-          </div>
-          <div class="col-4 col-md-2">
-            <select class="custom-select d-block w-100" id="bookingYear" required>
-              <option value="">YY</option>
-              <option>2020</option>
-              <option>2021</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a valid date.
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-2">
-          <div class="col-md-4">
-            <label for="address">Time:</label>
-          </div>
-          <div class="col-md-6">
-            <select class="custom-select d-block w-100" id="bookingTime" required>
-                <option value="">Select time...</option>
-                <option>11am</option>
-                <option>12noon</option>
-                <option>1pm</option>
-                <option>2pm</option>
-                <option>3pm</option>
-                <option>4pm</option>
-                <option>5pm</option>
-                <option>6pm</option>
-                <option>7pm</option>
-                <option>8pm</option>
-                <option>9pm</option>
-              </select>
-            <div class="invalid-feedback">
-              Please select the time.
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-2">
-          <div class="col-md-4">
-            <label for="address">Special Requests:</label>
-          </div>
-          <div class="col-md-8">
-            <textarea type="text" class="form-control" id="specialRequests"></textarea>
-          </div>
-        </div>
-
-        <div class="row mb-2">
-          <div class="col-md-8 offset-md-4">
-            <button class="btn btn-primary btn-block" type="submit">Comfirm Booking</button>
-          </div>
-        </div>
-        
-      </form>
-    </div> <!-- #bookingForm -->
-  </div> <!-- .row -->
-</div> <!-- .container-fluid .main-start -->
-
-
-    <footer>
-      <div>All rights reserved &copy; 2020 Daphne's Company Limited</div>
+    <footer class="contact-footer">
+      <div>All rights reserved &copy; 2020 Daphne's Company Ltd</div>
       <div>
         <span><a href="terms-and-conditions.html#termsAndConditions">Terms and Conditions</a></span>
         <span>|</span>
         <span><a href="terms-and-conditions.html#privacyPolicy">Privacy Policy</a></span>
       </div>
     </footer>
-
-
-    </main>
-
 
 
     <!-- Bootstrap core JavaScript
@@ -296,8 +130,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
-    <script src="form-validation.js"></script>
   </body>
 </html>

@@ -70,12 +70,13 @@
 
 
     <main role="main">
+      <div id="menuTop" class="dummy-block"></div>
       <div class="container-fluid main-start menu-container">
         <div class="row">
           <div id="verticalMenuNav" class="col-3 col-md-2">
             <h1>Dinner Menu</h1>
 
-          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-wine" role="tab" aria-controls="v-pills-home" aria-selected="true">Wine</a>
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-entree" role="tab" aria-controls="v-pills-profile" aria-selected="false">Entree</a>
             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-soup" role="tab" aria-controls="v-pills-profile" aria-selected="false">Soup</a>
@@ -89,8 +90,8 @@
           </div>
 
           <div id="switchMenu">
-              <a href="lunch-menu.html">Go to Lunch Menu &raquo;</a>
-            </div>
+            <a href="lunch-menu.html">Go to Lunch Menu &raquo;</a>
+          </div>
 
         </div>
           <div class="tab-content col-9 col-md-10" id="v-pills-tabContent">
@@ -140,11 +141,15 @@
 
 
       </div> <!-- .row -->
+      <span id="goToTop" class="float-right mr-2"><a href="#menuTop">Go back to top</a></span>
     </div> <!-- #stickyMenuNav .container-fluid -->
+    
+    <div class="dummy-block"></div>
+    <div class="dummy-block"></div>
 
     <footer class="menu-footer">
-      <a href="image/dinner.pdf" target="_blank"><button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download Dinner Menu</button></a>
-      <div >All rights reserved &copy; 2020 Daphne's Company Limited</div>
+      <a href="image/dinner.pdf" target="_blank"><button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download <br>Dinner Menu</button></a>
+      <div >All rights reserved &copy; 2020 Daphne's Company Ltd</div>
       <div>
         <span><a href="terms-and-conditions.html#termsAndConditions">Terms and Conditions</a></span>
         <span>|</span>

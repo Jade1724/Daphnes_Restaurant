@@ -10,8 +10,12 @@
 */
 
 /* --Start of index.html styles--------------------- */
-html, body, main {
-  min-height: 100vw;
+/*html, body, main {
+  height: 100vh;
+}*/
+
+.dummy-block {
+  height: 65px;
 }
 
 .container-fluid {
@@ -20,7 +24,6 @@ html, body, main {
 }
 
 .container-fluid.main-start {
-  margin-top: 65px;
   padding-top: 2%;
 }
 
@@ -88,10 +91,17 @@ nav.navbar {
 
 #hero {
   border-radius: 0;
-  background-color: black;
+  background-color: #212529;
   margin-bottom: 15px;
   padding-bottom: 2%;
 }
+
+/*.carousel-indicators li {
+  background-color: black;
+}
+ .carousel-control-prev-icon, .carousel-control-next-icon {
+  color: black;
+ }*/
 
 #copy {
   text-align: center;
@@ -168,7 +178,7 @@ nav.navbar {
   background-position: center;
   height: 160px;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   margin-bottom: 15px;
 }
 
@@ -207,6 +217,7 @@ nav.navbar {
 #missionStatement {
   padding-top: 20px;
   padding-bottom: 10px;
+  font-size: 18px;
   text-align: center;
   font-style: italic;
   background-color: #8B7A53;
@@ -228,11 +239,11 @@ nav.navbar {
 }
 
 footer {
+  font-size: 11px;
   text-align: center;
   background-color: black;
-  padding: 20px 5%;
+  padding: 10px 5%;
   color: white;
-  font-size: 11px;
 }
 
 footer span, footer a {
@@ -242,6 +253,10 @@ footer span, footer a {
 footer a:hover, footer a:active {
   color: white;
   text-decoration: none;
+}
+
+#socialMediaLinks a {
+  color: white;
 }
 
 #socialMediaLinks svg {
@@ -268,13 +283,11 @@ footer a:hover, footer a:active {
 .menu-container .row {
   margin-left: 0;
   margin-right: 0;
-  height: 100vw;
 }
 
 #verticalMenuNav {
   padding-left: 0;
   padding-right: 0;
-  height: inherit;
 }
 
 #verticalMenuNav h1 {
@@ -290,6 +303,7 @@ footer a:hover, footer a:active {
 }
 
 #v-pills-tab .nav-link {
+  width: 100%;
   font-size: 11px;
   background-color: #343A40;
   color: white;
@@ -316,23 +330,30 @@ footer a:hover, footer a:active {
 
 #v-pills-tabContent {
   padding-left: 0;
-  height: inherit;
-}
-
-#v-pills-tabContent .tab-pane {
-  height: 100%;
-  overflow: scroll;
+  padding-right: 0;
 }
 
 #v-pills-tabContent div img {
   width: 100%;
 }
 
+#goToTop a {
+  color: #343A40;
+  text-decoration: none;
+  font-size: 12px;
+}
+
 footer.menu-footer {
   text-align: left;
+  font-size: 11px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
+
 #menuDownload {
-  font-size: 8px;
+  font-size: 12px;
+
 }
 /* --End of menu.html styles----------------------- */
 
@@ -341,9 +362,25 @@ footer.menu-footer {
   font-size: 26px;
 }
 
-#hoursAndLocation p, #openHoursList {
+#contactDetailsList, #openHoursList, #location p {
   font-size: 23px;
 }
+
+#contactDetailsList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#contactDetailsList a {
+  color: #212529;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#contactDetailsList svg {
+  cursor: pointer;
+}
+
 
 #openHoursList {
   list-style-type: none;
@@ -353,51 +390,22 @@ footer.menu-footer {
   font-size: 18px;
 }
 
-#bookingForm h5 {
-  font-size: 26px;
-  text-align: center;
-}
-
-#bookingForm form {
-  font-size: 23px;
-}
-
-
-#bookingForm .form-control, #bookingForm .custom-select {
-  font-size: 18px;
-}
-
-#legalLink {
-  text-align: right;
-  font-size: 12px;
-}
-
-#legalLink a {
-  color: #8C6500;
-}
-
-#bookingForm textarea#specialRequests {
-  height: 3.0rem;
-}
-
-#bookingForm button {
-  background-color: #8B7A53;
-  border: none;
-}
-
-#bookingForm button:hover {
-  background-color: #695F40;
+footer.contact-footer {
+  font-size: 11px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
 
 /* --End of contact.html styles----------------- */
 
 /* --Start of terms-and-conditions.html styles------------------- */
-#anchorTab {
+/*#anchorTab {
   position: fixed;
   top: 75px;
   text-align: center;
 }
-
+*/
 #anchorTab .tab-container {
   background-color: #343a40;
   border-radius: 5px;
@@ -405,9 +413,9 @@ footer.menu-footer {
   padding-bottom: 3%;
 }
 
-#legalContents {
+/*#legalContents {
   top: 140px;
-}
+}*/
 
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
@@ -427,6 +435,9 @@ footer.menu-footer {
   #v-pills-tab .nav-link, #menuDownload {
   font-size: 14px;
   }
+  #goToTop a {
+    font-size: 16px;
+  }
   #legalLink a {
   position: absolute;
   bottom: 0;
@@ -442,13 +453,12 @@ footer.menu-footer {
   #copy h1 {
     font-size: 25px;
   }
-  #heroButton a, .carousel-caption h5, #homeInfo h2, #aboutUs h3 {
+  #heroButton a, #homeInfo h2, #aboutUs h3 {
     font-size: 18px;
   }
   #homeInfo li, #custormerReview p, #aboutUs p {
     font-size: 15px
   }
-
   #homeInfo li:nth-child(3) {
   font-size: 12px;
   }
@@ -464,6 +474,9 @@ footer.menu-footer {
   #v-pills-tab .nav-link, #menuDownload {
   font-size: 16px;
   }
+  #goToTop a {
+    font-size: 20px;
+  }
   #openHoursList {
   font-size: 23px;
   }
@@ -475,8 +488,8 @@ footer.menu-footer {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .container-fluid.main-start {
-  margin-top: 79px;
+  .dummy-block {
+    height: 79px;
   }
   #navbarsExampleDefault li:nth-child(1) {
     margin-top: 0;
@@ -503,13 +516,13 @@ footer.menu-footer {
     top: 50%;
     margin-top: -26px;
   }
-  #heroButton a, .carousel-caption h5, #homeInfo h2, #aboutUs h3 {
+  #heroButton a, #homeInfo h2, #aboutUs h3 {
     font-size: 22px;
   }
   #homeInfo li, #custormerReview p, #aboutUs p {
     font-size: 19px
   }
-  #homeInfo li:nth-child(3), footer {
+  #homeInfo li:nth-child(3) {
   font-size: 15px;
   }
   #bookNowButton {
@@ -534,6 +547,9 @@ footer.menu-footer {
   #v-pills-tab .nav-link, #menuDownload {
   font-size: 18px;
   }
+  #goToTop a {
+    font-size: 24px;
+  }
   #legalLink {
   text-align: right;
   font-size: 16px;
@@ -557,7 +573,7 @@ footer.menu-footer {
   #copy h1 {
     font-size: 37px;
   }
-  #heroButton a, .carousel-caption h5, #homeInfo h2, #aboutUs h3 {
+  #heroButton a, #homeInfo h2, #aboutUs h3 {
     font-size: 27px;
   }
   #hoursAndLocation {
@@ -565,8 +581,11 @@ footer.menu-footer {
   }
 }
 
-@media (min-aspect-ratio: 4/3) {
-  #v-pills-tab .nav-link br {
+@media (min-aspect-ratio: 3/4) {
+  /*#v-pills-tab .nav-link br {
+    display: none;
+  }*/
+  #menuDownload br {
     display: none;
   }
 }
