@@ -33,19 +33,46 @@ nav.navbar {
 
 }
 
-.navbar .navbar-brand {
+nav.navbar .row {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+nav #logo {
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*.navbar .navbar-brand {
   position: absolute;
   left: 50%;
   margin-left: -75px;
   top: 6px;
   padding: 0;
+}*/
+nav #menuBarToggler {
+  display: flex;
+  align-items: center;
 }
 
 .navbar .navbar-toggler {
   font-size: 0.7rem;
   padding: 0.3rem 0.3rem;
 }
+nav #navIcons {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
+#navIcons span {
+  position: absolute;
+  right: 0;
+}
 
 #navbarsExampleDefault .navbar-nav, #copy h1 {
   white-space: nowrap;

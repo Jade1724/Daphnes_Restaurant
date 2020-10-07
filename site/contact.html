@@ -23,23 +23,26 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="image/logo.png"></a>
-        <button id="menuBarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <div class="row">
+        <div  id="menuBarToggler" class="col-5 d-lg-none">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
-        <div>
-        <a id="phone" class="navbar-toggler" href="tel:021-256-9857"><i class="fas fa-phone"></i></a>
+        <a id="logo" class="col-2 order-lg-first" href="index.html"><img src="image/logo.png"></a>
 
-        <button id="searchFromToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#searchForm" aria-controls="searchForm" aria-expanded="false" aria-label="Toggle search form input">
-          <i class="fa fa-search"></i>
-        </button>
-      </div>
+        <div id="navIcons" class="col-5 d-lg-none">
+          <span>
+            <a id="phone" class="navbar-toggler" href="tel:021-256-9857"><i class="fas fa-phone"></i></a>
+            <button id="searchFromToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#searchForm" aria-controls="searchForm" aria-expanded="false" aria-label="Toggle search form input"><i class="fa fa-search"></i>
+            </button>
+          </span>
+        </div>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
@@ -48,8 +51,8 @@
                 <a class="dropdown-item" href="dinner-menu.html">Dinner</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Contact Us</a>
             </li>
             <li class="nav-item">
               <a href="tel:021-256-9857"><button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0 d-none d-lg-block" type="submit">Call Us</button></a>
@@ -65,8 +68,9 @@
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control" type="text" placeholder="Search" aria-label="Search">
           </form>
+        </div>
       </div>
-    </nav> <!-- Navigation bar -->
+    </nav>
 
   <main role="main">
   <div class="dummy-block"></div>
