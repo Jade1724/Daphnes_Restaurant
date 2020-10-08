@@ -10,9 +10,6 @@
 */
 
 /* --Start of index.html styles--------------------- */
-/*html, body, main {
-  height: 100vh;
-}*/
 * {
   font-family: 'Montserrat', sans-serif;
 }
@@ -32,8 +29,8 @@
 
 nav.navbar {
   background-color: rgba(157, 0, 0, 0.9);
-/*  padding: 15px;   Test on Linux machine again before deleting*/
-
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 nav.navbar .row {
@@ -54,10 +51,6 @@ nav #menuBarToggler {
   align-items: center;
 }
 
-.navbar .navbar-toggler {
-  font-size: 0.7rem;
-  padding: 0.3rem 0.3rem;
-}
 nav #navIcons {
   display: flex;
   align-items: center;
@@ -75,7 +68,6 @@ nav #navIcons {
 
 
 #navbarButtons {
-  font-size: 14px;
   text-align: center;
 }
 
@@ -99,12 +91,8 @@ nav #navIcons {
 }
 
 
-#phone, #searchFromToggler {
+#phone {
   border: none;
-}
-
-#searchForm .form-control {
-  font-size: 14px;
 }
 
 
@@ -149,13 +137,6 @@ nav #navIcons {
 
 #heroButton a:hover {
   background-color: #695F40;
-}
-
-#menuCarousel .carousel-caption {
-  text-align: left;
-  padding: 0;
-  top: 8%;
-  left: 8%;
 }
 
 #homeInfo {
@@ -443,9 +424,6 @@ footer.contact-footer {
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  #searchForm .form-control {
-      width: 100%;
-  }
   #heroButton a {
   font-size: 20px
   }
@@ -470,6 +448,10 @@ footer.contact-footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #navOrderButton {
+    background-color: #343A40;
+    border: 1px solid transparent;
+  }
   #heroButton a, #homeInfo h2, #aboutUs h3 {
     font-size: 18px;
   }
@@ -505,13 +487,6 @@ footer.contact-footer {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .dummy-block {
-    height: 68px;
-  }
-  #navOrderButton {
-    background-color: #343A40;
-    border: 1px solid transparent;
-  }
   #navOrderButton:hover {
     background-color: #23272B;
     border-color: #1D2124;
@@ -524,12 +499,7 @@ footer.contact-footer {
   #copy h1 {
     font-size: 27px;
   }
-  #searchForm {
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    margin-top: -26px;
-  }
+
   #heroButton a, #homeInfo h2, #aboutUs h3 {
     font-size: 22px;
   }
@@ -576,13 +546,6 @@ footer.contact-footer {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
-  #searchForm {
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    margin-top: -26px;
-  }
 
   #copy h1 {
     font-size: 35px;
