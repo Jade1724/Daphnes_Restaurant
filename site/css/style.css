@@ -13,9 +13,12 @@
 /*html, body, main {
   height: 100vh;
 }*/
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 
 .dummy-block {
-  height: 65px;
+  height: 68px;
 }
 
 .container-fluid {
@@ -46,14 +49,6 @@ nav #logo {
   justify-content: center;
 }
 
-
-/*.navbar .navbar-brand {
-  position: absolute;
-  left: 50%;
-  margin-left: -75px;
-  top: 6px;
-  padding: 0;
-}*/
 nav #menuBarToggler {
   display: flex;
   align-items: center;
@@ -74,20 +69,17 @@ nav #navIcons {
   right: 0;
 }
 
-#navbarsExampleDefault .navbar-nav, #copy h1 {
+#navbarButtons .navbar-nav, #copy h1 {
   white-space: nowrap;
 }
 
-#navbarsExampleDefault li:nth-child(1) {
-  margin-top: 15px;
-}
 
-#navbarsExampleDefault {
-  font-size: 16px;
+#navbarButtons {
+  font-size: 14px;
   text-align: center;
 }
 
-#navbarsExampleDefault .dropdown-item {
+#navbarButtons .dropdown-item {
   text-align: center;
 }
 
@@ -103,7 +95,7 @@ nav #navIcons {
 }
 
 #navPhoneButton, #navOrderButton {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
@@ -112,7 +104,7 @@ nav #navIcons {
 }
 
 #searchForm .form-control {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
@@ -137,8 +129,9 @@ nav #navIcons {
 }
 
 #copy h1 {
-  font-size: 25px;
+  font-size: 22px;
   color: #8B7A53;
+  font-weight: bold;
 }
 
 #heroButton {
@@ -176,6 +169,7 @@ nav #navIcons {
 
 #homeInfo h2 {
   font-size: 26px;
+  font-weight: bold;
 }
 
 #custormerReview svg {
@@ -235,6 +229,7 @@ nav #navIcons {
 
 #aboutUs h3 {
   font-size: 26px;
+  font-weight: bold;
 }
 
 #aboutUs p {
@@ -319,6 +314,7 @@ footer a:hover, footer a:active {
 
 #verticalMenuNav h1 {
   font-size: 20px;
+  font-weight: bold;
 }
 
 #verticalMenuNav h1, #switchMenu {
@@ -365,8 +361,8 @@ footer a:hover, footer a:active {
 }
 
 #goToTop a {
-  color: #343A40;
-  text-decoration: none;
+  color: #8C6500;
+  text-decoration: underline;
   font-size: 12px;
 }
 
@@ -385,8 +381,8 @@ footer.menu-footer {
 /* --End of menu.html styles----------------------- */
 
 /* --Start of contact.html styles------------------- */
-#hoursAndLocation h5 {
-  font-size: 26px;
+.contact-container h5 {
+  font-weight: bold;
 }
 
 #contactDetailsList, #openHoursList, #location p {
@@ -474,12 +470,6 @@ footer.contact-footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /*#hero {
-    padding-bottom: 15px;
-  }*/
-  #copy h1 {
-    font-size: 25px;
-  }
   #heroButton a, #homeInfo h2, #aboutUs h3 {
     font-size: 18px;
   }
@@ -516,10 +506,7 @@ footer.contact-footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .dummy-block {
-    height: 79px;
-  }
-  #navbarsExampleDefault li:nth-child(1) {
-    margin-top: 0;
+    height: 68px;
   }
   #navOrderButton {
     background-color: #343A40;
@@ -535,7 +522,7 @@ footer.contact-footer {
     margin-top: 0;
   }
   #copy h1 {
-    font-size: 32px;
+    font-size: 27px;
   }
   #searchForm {
     position: absolute;
@@ -598,13 +585,10 @@ footer.contact-footer {
   }
 
   #copy h1 {
-    font-size: 37px;
+    font-size: 35px;
   }
   #heroButton a, #homeInfo h2, #aboutUs h3 {
     font-size: 27px;
-  }
-  #hoursAndLocation {
-  border-left: solid rgba(0, 0, 0, 0.1) 1px;
   }
 }
 
