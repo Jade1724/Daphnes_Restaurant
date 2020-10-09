@@ -51,6 +51,11 @@ nav #menuBarToggler {
   align-items: center;
 }
 
+nav .navbar-toggler {
+  font-size: 1rem;
+  padding: 0.15rem 0.5rem;
+}
+
 nav #navIcons {
   display: flex;
   align-items: center;
@@ -69,29 +74,21 @@ nav #navIcons {
 
 #navbarButtons {
   text-align: center;
-}
-
-#navbarButtons .dropdown-item {
-  text-align: center;
+  font-size: 24px;
 }
 
 .nav-item .dropdown-menu {
-  font-size: 14px;
   padding: 0px;
+  text-align: center;
+  font-size: 24px;
 }
-
 
 #navOrderButton {
   background: none;
   border: none;
 }
 
-#navPhoneButton, #navOrderButton {
-  font-size: 14px;
-}
-
-
-#phone {
+#phoneIcon {
   border: none;
 }
 
@@ -113,7 +110,6 @@ nav #navIcons {
 #copy {
   text-align: center;
   margin: auto 0px;
-  padding: 0px;
 }
 
 #copy h1 {
@@ -125,14 +121,14 @@ nav #navIcons {
 #heroButton {
   margin-top: 2%;
   white-space: nowrap;
-  /*margin-left: auto;*/
 }
+
 
 #heroButton a {   /* Buttons on the Jumbotron */
   color: white;
   background-color: #8B7A53;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #heroButton a:hover {
@@ -149,7 +145,7 @@ nav #navIcons {
 }
 
 #homeInfo h2 {
-  font-size: 26px;
+  font-size: 23px;
   font-weight: bold;
 }
 
@@ -170,7 +166,7 @@ nav #navIcons {
 }
 
 #custormerReview p {
-  font-size: 23px;
+  font-size: 18px;
   font-style: italic;
 }
 
@@ -187,7 +183,7 @@ nav #navIcons {
 #homeInfo ul {
   list-style-type: none;
   padding-left: 0px;
-  font-size: 23px;
+  font-size: 18px;
 }
 
 #homeInfo li:nth-child(3) {
@@ -209,7 +205,7 @@ nav #navIcons {
 }
 
 #aboutUs h3 {
-  font-size: 26px;
+  font-size: 23px;
   font-weight: bold;
 }
 
@@ -262,9 +258,9 @@ footer a:hover, footer a:active {
   color: white;
 }
 
-#socialMediaLinks svg {
+/*#socialMediaLinks svg {
   margin: 0 10% 10px;
-}
+}*/
 
 
 /* --End of index.html styles---------------------- */
@@ -294,7 +290,7 @@ footer a:hover, footer a:active {
 }
 
 #verticalMenuNav h1 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -309,8 +305,8 @@ footer a:hover, footer a:active {
 #v-pills-tab .nav-link {
   width: 100%;
   font-size: 11px;
-  background-color: #343A40;
-  color: white;
+  background-color: white;
+  color: #343A40;
   border-radius: 0;
   padding: 4% 5%;
 }
@@ -319,13 +315,13 @@ footer a:hover, footer a:active {
   background-color: grey;
 }
 #v-pills-tab .nav-link.active {
-  background-color: white;
-  color: #343A40;
+  background-color: #343A40;
+  color: white;
 }
 
 #switchMenu {
   margin-top: 5%;
-  font-size: 6px;
+  font-size: 8px;
 }
 
 #switchMenu a {
@@ -404,28 +400,12 @@ footer.contact-footer {
 /* --End of contact.html styles----------------- */
 
 /* --Start of terms-and-conditions.html styles------------------- */
-/*#anchorTab {
-  position: fixed;
-  top: 75px;
-  text-align: center;
-}
-*/
-#anchorTab .tab-container {
-  background-color: #343a40;
-  border-radius: 5px;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-/*#legalContents {
-  top: 140px;
-}*/
 
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #heroButton a {
-  font-size: 20px
+  font-size: 23px
   }
   #verticalMenuNav h1 {
   font-size: 22px;
@@ -448,11 +428,20 @@ footer.contact-footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #navbarButtons, #navPhoneButton, #navOrderButton {
+    font-size: 0.6rem;
+  }
+  .nav-item .dropdown-menu {
+    font-size: 0.6rem;
+  }
   #navOrderButton {
     background-color: #343A40;
     border: 1px solid transparent;
   }
-  #heroButton a, #homeInfo h2, #aboutUs h3 {
+  #heroButton a {
+    font-size: 16px;
+  }
+  #homeInfo h2, #aboutUs h3 {
     font-size: 18px;
   }
   #homeInfo li, #custormerReview p, #aboutUs p {
@@ -460,9 +449,6 @@ footer.contact-footer {
   }
   #homeInfo li:nth-child(3) {
   font-size: 12px;
-  }
-  #bookNowButton {
-  font-size: 0.8rem;
   }
   #verticalMenuNav h1 {
   font-size: 28px;
@@ -512,23 +498,23 @@ footer.contact-footer {
   #bookNowButton {
   font-size: 1.3rem;
   }
+  #socialMediaLinks svg {
+    font-size: 1.5rem;
+  }
   #verticalMenuNav h2 {
   font-size: 1.5rem;
   }
 
-  #verticalMenuNav a {
-    font-size: 19px;
-  }
   #v-pills-tab .nav-link {
-    font-size: 18px;
+    font-size: 20px;
   }
   #verticalMenuNav h1 {
   font-size: 30px;
   }
   #switchMenu {
-  font-size: 16px;
+  font-size: 18px;
   }
-  #v-pills-tab .nav-link, #menuDownload {
+  #menuDownload {
   font-size: 18px;
   }
   #goToTop a {
@@ -537,10 +523,6 @@ footer.contact-footer {
   #legalLink {
   text-align: right;
   font-size: 16px;
-  }
-  #anchorTab {
-  position: fixed;
-  top: 89px;
   }
 }
 
