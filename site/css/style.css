@@ -379,7 +379,7 @@ footer.menu-footer {
   padding-left: 0;
 }
 
-#openHoursList li:nth-child(3) {
+#openHoursList li span {
   font-size: 15px;
 }
 
@@ -513,7 +513,7 @@ footer.contact-footer {
   #contactDetailsList, #openHoursList, #location p {
   font-size: 19px;
   }
-  #openHoursList li:nth-child(3) {
+  #openHoursList li span {
     font-size: 16px;
   }
 }
