@@ -46,7 +46,7 @@
             <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
               <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item active" href="#">Lunch &amp; Takeaway</a>
+                <a class="dropdown-item active" href="#">Lunch</a>
                 <a class="dropdown-item" href="dinner-menu.html">Wine &amp; Dinner</a>
               </div>
             </li>
@@ -72,41 +72,28 @@
       <div class="container-fluid main-start menu-container">
         <div class="row">
           <div id="verticalMenuNav" class="col-3">
-            <h1>Lunch &amp; Takeaway</h1>
-
-          <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-wine" role="tab" aria-controls="v-pills-home" aria-selected="true">Lunch</a>
-            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-entree" role="tab" aria-controls="v-pills-profile" aria-selected="false">Take away</a>
-
+            <h1>Lunch</h1>
+            <div id="switchMenu">
+              <a href="dinner-menu.html">Go to Wine &amp; Dinner &raquo;</a>
+            </div>
           </div>
 
-          <div id="switchMenu">
-            <a href="dinner-menu.html">Go to Wine &amp; Dinner &raquo;</a>
-          </div>
-
-        </div>
           <div class="tab-content col-9" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-wine" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="tab-pane active" role="tabpanel" aria-labelledby="v-pills-home-tab">
               <img src="image/lunch1.jpg" alt="Lunch menu 1" />
               <img src="image/lunch2.jpg" alt="Lunch menu 1" />
               <img src="image/lunch3.jpg" alt="Lunch menu 1" />
             </div>
-            <div class="tab-pane fade" id="v-entree" role="tabpanel" aria-labelledby="v-pills-home-tab">
-              <img src="image/takeaway1.jpg" alt="Takeaway menu 1" />
-              <img src="image/takeaway2.jpg" alt="Takeaway menu 2" />
-              <img src="image/takeaway3.jpg" alt="Takeaway menu 3" />
-              <img src="image/takeaway4.jpg" alt="Takeaway menu 4" />
-            </div>
           </div> <!-- .tab-content #v-pills-tabContent -->
-      </div> <!-- .row -->
-      <span id="goToTop" class="float-right mr-2"><a href="#menuTop">Go back to top &#8593;</a></span>
-    </div> <!-- #stickyMenuNav .container-fluid -->
+        </div> <!-- .row -->
+        <span id="goToTop" class="float-right mr-2"><a href="#menuTop">Go back to top &#8593;</a></span>
+      </div> <!-- #stickyMenuNav .container-fluid -->
 
     <div class="dummy-block"></div>
     <div class="dummy-block"></div>
 
     <footer class="menu-footer">
-      <a href="image/dim_sum.pdf" target="_blank"><button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download Lunch Menu</button></a>
+      <a href="image/lunch_menu.pdf" target="_blank"><button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download <br>Lunch Menu</button></a>
       <div>All rights reserved &copy; 2020 Daphne's Company Ltd</div>
       <div>
         <span><a href="terms-and-conditions.html#termsAndConditions">Terms and Conditions</a></span>

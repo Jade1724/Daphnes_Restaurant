@@ -86,6 +86,7 @@ nav #navIcons {
 #navOrderButton {
   background: none;
   border: none;
+  font-size: 24px;
 }
 
 #phoneIcon {
@@ -106,6 +107,12 @@ nav #navIcons {
  .carousel-control-prev-icon, .carousel-control-next-icon {
   color: black;
  }*/
+.carousel-indicators li {
+  background-color: #212529;
+}
+.carousel-control-prev svg, .carousel-control-next svg {
+  color: #212529;
+}
 
 #copy {
   text-align: center;
@@ -176,7 +183,6 @@ nav #navIcons {
   background-position: center;
   height: 160px;
   width: 100%;
-  /*overflow: hidden;*/
   margin-bottom: 15px;
 }
 
@@ -187,7 +193,7 @@ nav #navIcons {
 }
 
 #homeInfo li:nth-child(3) {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 #aboutUs {
@@ -221,20 +227,6 @@ nav #navIcons {
   font-style: italic;
   background-color: #8B7A53;
   color: white;
-}
-
-
-#bookNowButton {
-  color: white;
-  background-color: rgba(157, 0, 0, 0.8);
-  position: fixed;
-  bottom: 4%;
-  right: 4%;
-}
-
-#bookNowButton:hover {
-  color: white;
-  background-color: #890000;
 }
 
 footer {
@@ -333,7 +325,7 @@ footer a:hover, footer a:active {
   padding-right: 0;
 }
 
-#v-pills-tabContent div img {
+#v-pills-tabContent .tab-pane img {
   width: 100%;
 }
 
@@ -360,10 +352,11 @@ footer.menu-footer {
 /* --Start of contact.html styles------------------- */
 .contact-container h5 {
   font-weight: bold;
+  font-size: 23px;
 }
 
 #contactDetailsList, #openHoursList, #location p {
-  font-size: 23px;
+  font-size: 18px;
 }
 
 #contactDetailsList {
@@ -381,13 +374,13 @@ footer.menu-footer {
   cursor: pointer;
 }
 
-
 #openHoursList {
   list-style-type: none;
   padding-left: 0;
 }
+
 #openHoursList li:nth-child(3) {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 footer.contact-footer {
@@ -462,10 +455,7 @@ footer.contact-footer {
   #goToTop a {
     font-size: 20px;
   }
-  #openHoursList {
-  font-size: 23px;
-  }
-  #openHoursList li:nth-child(3) {
+  .contact-container h5 {
   font-size: 18px;
   }
 
@@ -493,10 +483,7 @@ footer.contact-footer {
     font-size: 19px
   }
   #homeInfo li:nth-child(3) {
-  font-size: 15px;
-  }
-  #bookNowButton {
-  font-size: 1.3rem;
+  font-size: 16px;
   }
   #socialMediaLinks svg {
     font-size: 1.5rem;
@@ -520,9 +507,14 @@ footer.contact-footer {
   #goToTop a {
     font-size: 24px;
   }
-  #legalLink {
-  text-align: right;
-  font-size: 16px;
+  .contact-container h5 {
+  font-size: 22px;
+  }
+  #contactDetailsList, #openHoursList, #location p {
+  font-size: 19px;
+  }
+  #openHoursList li:nth-child(3) {
+    font-size: 16px;
   }
 }
 
@@ -534,6 +526,9 @@ footer.contact-footer {
   }
   #heroButton a, #homeInfo h2, #aboutUs h3 {
     font-size: 27px;
+  }
+  .contact-container h5 {
+  font-size: 27px;
   }
 }
 
