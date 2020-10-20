@@ -10,7 +10,7 @@
 */
 
 /* --Start of index.html styles--------------------- */
-* {
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -75,6 +75,19 @@ nav #navIcons {
 #navbarButtons {
   text-align: center;
   font-size: 24px;
+
+}
+#navbarButtons ul {
+  height: 100vh;
+}
+
+#navbarButtons li {
+  padding: .7rem 1rem;
+}
+
+.nav-item hr {
+  border-top: 3px solid white;
+  margin-bottom: 2rem;
 }
 
 .nav-item .dropdown-menu {
@@ -93,7 +106,6 @@ nav #navIcons {
   border: none;
 }
 
-
 #hero {
   border-radius: 0;
   background-color: #212529;
@@ -101,15 +113,10 @@ nav #navIcons {
   padding-bottom: 2%;
 }
 
-/*.carousel-indicators li {
-  background-color: black;
-}
- .carousel-control-prev-icon, .carousel-control-next-icon {
-  color: black;
- }*/
 .carousel-indicators li {
   background-color: #212529;
 }
+
 .carousel-control-prev svg, .carousel-control-next svg {
   color: #212529;
 }
@@ -246,14 +253,9 @@ footer a:hover, footer a:active {
   text-decoration: none;
 }
 
-#socialMediaLinks a {
+.social-media-links a {
   color: white;
 }
-
-/*#socialMediaLinks svg {
-  margin: 0 10% 10px;
-}*/
-
 
 /* --End of index.html styles---------------------- */
 
@@ -345,7 +347,6 @@ footer.menu-footer {
 
 #menuDownload {
   font-size: 12px;
-
 }
 /* --End of menu.html styles----------------------- */
 
@@ -424,6 +425,9 @@ footer.contact-footer {
   #navbarButtons, #navPhoneButton, #navOrderButton {
     font-size: 0.7rem;
   }
+  #navbarButtons ul {
+    height: inherit;
+  }
   .nav-item .dropdown-menu {
     font-size: 0.6rem;
   }
@@ -480,7 +484,7 @@ footer.contact-footer {
   #homeInfo li:nth-child(3) {
   font-size: 16px;
   }
-  #socialMediaLinks svg {
+  .social-media-links svg {
     font-size: 1.5rem;
   }
   #verticalMenuNav h2 {
