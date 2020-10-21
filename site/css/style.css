@@ -81,13 +81,19 @@ nav #navIcons {
   height: 100vh;
 }
 
-#navbarButtons li {
-  padding: .7rem 1rem;
+/*#navbarButtons li {
+  padding: .7rem 0;
 }
+*/
+
+/*#navbarButtons .nav-item {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}*/
 
 .nav-item hr {
   border-top: 3px solid white;
-  margin-bottom: 2rem;
+/*  margin-bottom: 2rem;*/
 }
 
 .nav-item .dropdown-menu {
@@ -428,6 +434,10 @@ footer.contact-footer {
   #navbarButtons ul {
     height: inherit;
   }
+  #navbarButtons li.nav-item {
+  padding-top: 0;
+  padding-bottom: 0;
+  }
   .nav-item .dropdown-menu {
     font-size: 0.6rem;
   }
@@ -532,10 +542,14 @@ footer.contact-footer {
 }
 
 @media (min-aspect-ratio: 3/4) {
-  /*#v-pills-tab .nav-link br {
-    display: none;
-  }*/
   #menuDownload br {
     display: none;
+  }
+}
+
+@media (min-height: 600px) {
+  #navbarButtons .nav-item {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   }
 }
