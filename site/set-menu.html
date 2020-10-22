@@ -4,37 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TRFZTNC');</script>
 <!-- End Google Tag Manager -->
-    <link rel="icon" href="image/favicon.ico">
-
-    <title>Lunch Menu</title>
+    <title>Dinner menu</title>
     <script defer src="fontawesome/js/all.js"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!-- Favicons -->
+    <link rel="icon" href="image/favicon.ico">
 
-<!--     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/"> -->
-
-    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
   </head>
-
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRFZTNC"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
     <nav class="navbar navbar-expand-md navbar-dark fixed-top container-fluid">
       <div class="row">
         <div  id="menuBarToggler" class="col-5 d-md-none">
@@ -53,14 +52,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="collapse navbar-collapse" id="navbarButtons">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mt-3 mt-md-0">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item active dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+              <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu <span class="sr-only">(current)</span></a>
               <div class="dropdown-menu" aria-labelledby="dropdown01">
-                <a class="dropdown-item active" href="#">Lunch</a>
+                <a class="dropdown-item" href="lunch-menu.html">Lunch</a>
                 <a class="dropdown-item" href="dinner-menu.html">Wine &amp; Dinner</a>
-                <a class="dropdown-item" href="set-menu.html">Set Menu</a>
+                <a class="dropdown-item active" href="#">Set Menu</a>
               </div>
             </li>
             <li class="nav-item">
@@ -70,7 +69,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a href="tel:033-488-988"><button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button></a>
             </li>
             <li class="nav-item">
-              <a href="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" target="_blank"><button id="navOrderButton" class="btn btn-dark" type="submit">Order Online</button></a>
+              <a href="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" target="_blank"><button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button></a>
             </li>
             <li class="nav-item d-md-none">
               <hr>
@@ -92,42 +91,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="container-fluid main-start menu-container">
         <div class="row">
           <div id="verticalMenuNav" class="col-3">
-            <h1>Lunch</h1>
-            <div id="switchMenu">
-              <p><a href="dinner-menu.html">Go to Wine &amp; Dinner &raquo;</a></p>
-              <p><a href="set-menu.html">Go to Set Menu &raquo;</a></p>
-            </div>
+            <h1>Set Menu</h1>
+
+          <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" data-toggle="pill" href="#v-setMenu1" role="tab" aria-controls="v-pills-home" aria-selected="true">Set Menu 1</a>
+            <a class="nav-link" data-toggle="pill" href="#v-setMenu2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Set Menu 2</a>
+            <a class="nav-link" data-toggle="pill" href="#v-setMenu3" role="tab" aria-controls="v-pills-profile" aria-selected="false">Set Menu 3</a>
           </div>
 
+          <div id="switchMenu">
+            <p><a href="lunch-menu.html">Go to Lunch &raquo;</a></p>
+            <p><a href="dinner-menu.html">Go to Wine &amp; Dinner &raquo;</a></p>
+          </div>
+
+        </div>
           <div class="tab-content col-9" id="v-pills-tabContent">
-            <div class="tab-pane active" role="tabpanel" aria-labelledby="v-pills-home-tab">
-              <img src="image/lunch1.jpg" alt="Lunch menu 1" />
-              <img src="image/lunch2.jpg" alt="Lunch menu 1" />
-              <img src="image/lunch3.jpg" alt="Lunch menu 1" />
+            <div class="tab-pane fade show active" id="v-setMenu1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <img src="image/set-menu-1.jpg" alt="Set menu 1" />
+            </div>
+            <div class="tab-pane fade" id="v-setMenu2" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <img src="image/set-menu-2.jpg" alt="Set menu 2" />
+            </div>
+            <div class="tab-pane fade" id="v-setMenu3" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <img src="image/set-menu-3.jpg" alt="Set menu 3" />
             </div>
           </div> <!-- .tab-content #v-pills-tabContent -->
-        </div> <!-- .row -->
-        <span id="goToTop" class="float-right mr-2"><a href="#menuTop">Go back to top &#8593;</a></span>
-      </div> <!-- #stickyMenuNav .container-fluid -->
+
+
+      </div> <!-- .row -->
+      <span id="goToTop" class="float-right mr-2"><a href="#menuTop">Go back to top &#8593;</a></span>
+    </div> <!-- #stickyMenuNav .container-fluid -->
 
     <div class="dummy-block"></div>
     <div class="dummy-block"></div>
 
     <footer class="menu-footer">
-      <a href="image/lunch_menu.pdf" target="_blank"><button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download <br>Lunch Menu</button></a>
-      <div>All rights reserved &copy; 2020 Daphne's Company Ltd</div>
+      <a href="image/set_menu.pdf" target="_blank"><button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download <br>Set Menu</button></a>
+      <div >All rights reserved &copy; 2020 Daphne's Company Ltd</div>
       <div>
         <span><a href="terms-and-conditions.html#termsAndConditions">Terms and Conditions</a></span>
         <span>|</span>
         <span><a href="terms-and-conditions.html#privacyPolicy">Privacy Policy</a></span>
       </div>
+
     </footer>
     </main>
 
-
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-
-  </body>
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+    </body>
 </html>
