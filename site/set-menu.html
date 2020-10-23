@@ -14,19 +14,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TRFZTNC');</script>
 <!-- End Google Tag Manager -->
     <title>Dinner menu</title>
-    <script defer src="fontawesome/js/all.js"></script>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/jumbotron/">
-
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <!-- Favicons -->
-    <link rel="icon" href="image/favicon.ico">
-
+    <!-- Fontello icons -->
+    <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -43,9 +38,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <a id="logo" class="col-2 order-md-first" href="index.html"><img src="image/logo.png"></a>
 
-        <div id="navIcons" class="col-5 d-md-none">
-          <span>
-            <a id="phoneIcon" class="navbar-toggler" href="tel:033-488-988"><i class="fas fa-phone fa-lg"></i></a>
+        <div id="phoneIcon" class="col-5 d-md-none">
+          <span class="ml-auto">
+            <a class="navbar-toggler" href="tel:033-488-988"><i class="icon-phone-1"></i></a>
           </span>
         </div>
 
@@ -74,13 +69,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li class="nav-item d-md-none">
               <hr>
               <div class="social-media-links d-flex justify-content-around">
-                <a href="https://www.facebook.com/daphnesrestaurantchristchurch/" target="_blank"><span class="fab fa-facebook-square fa-lg"></span></a>
-                <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g255118-d5111546-Reviews-Daphnes_Restaurant-Christchurch_Canterbury_Region_South_Island.html?m=19905" target="_blank"><span class="fab fa-tripadvisor fa-lg"></span></a>
+                <a href="https://www.facebook.com/daphnesrestaurantchristchurch/" target="_blank"><span class="icon-facebook-squared"></span></a>
+                <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g255118-d5111546-Reviews-Daphnes_Restaurant-Christchurch_Canterbury_Region_South_Island.html?m=19905" target="_blank"><span class="icon-tripadvisor"></span></a>
               </div>
             </li>
           </ul>
         </div>
-
       </div>
     </nav>
 
@@ -92,27 +86,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="row">
           <div id="verticalMenuNav" class="col-3">
             <h1>Set Menu</h1>
-
           <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" data-toggle="pill" href="#v-setMenu1" role="tab" aria-controls="v-pills-home" aria-selected="true">Set Menu 1</a>
-            <a class="nav-link" data-toggle="pill" href="#v-setMenu2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Set Menu 2</a>
-            <a class="nav-link" data-toggle="pill" href="#v-setMenu3" role="tab" aria-controls="v-pills-profile" aria-selected="false">Set Menu 3</a>
+            <a class="nav-link active" data-toggle="pill" href="#v-setMenu1" role="tab" aria-controls="v-pills-set-menu-1" aria-selected="true">Set Menu 1</a>
+            <a class="nav-link" data-toggle="pill" href="#v-setMenu2" role="tab" aria-controls="v-pills-set-menu-2" aria-selected="false">Set Menu 2</a>
+            <a class="nav-link" data-toggle="pill" href="#v-setMenu3" role="tab" aria-controls="v-pills-set-menu-3" aria-selected="false">Set Menu 3</a>
           </div>
 
           <div id="switchMenu">
-            <p><a href="lunch-menu.html">Go to Lunch &raquo;</a></p>
-            <p><a href="dinner-menu.html">Go to Wine &amp; Dinner &raquo;</a></p>
+            <div><a href="lunch-menu.html">Go to Lunch &raquo;</a></div>
+            <div><a href="dinner-menu.html">Go to Wine &amp; Dinner &raquo;</a></div>
           </div>
 
         </div>
           <div class="tab-content col-9" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-setMenu1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="tab-pane fade show active" id="v-setMenu1" role="tabpanel" aria-labelledby="v-pills-set-menu-1-tab">
               <img src="image/set-menu-1.jpg" alt="Set menu 1" />
             </div>
-            <div class="tab-pane fade" id="v-setMenu2" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <div class="tab-pane fade" id="v-setMenu2" role="tabpanel" aria-labelledby="v-pills-set-menu-2-tab">
               <img src="image/set-menu-2.jpg" alt="Set menu 2" />
             </div>
-            <div class="tab-pane fade" id="v-setMenu3" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            <div class="tab-pane fade" id="v-setMenu3" role="tabpanel" aria-labelledby="v-pills-set-menu-3-tab">
               <img src="image/set-menu-3.jpg" alt="Set menu 3" />
             </div>
           </div> <!-- .tab-content #v-pills-tabContent -->

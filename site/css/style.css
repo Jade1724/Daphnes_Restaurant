@@ -2,7 +2,8 @@
     > index.html
     > lunch-menu.html
     > dinner-menu.html
-    > contact.htnl
+    > set-menu.html
+    > contact.html
     > terms-and-conditions.html
 
     Author: Haruka Ichinose
@@ -40,7 +41,6 @@ nav.navbar .row {
 }
 
 nav #logo {
-  margin-right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +49,8 @@ nav #logo {
 nav #menuBarToggler {
   display: flex;
   align-items: center;
+  padding-left: 0;
+  padding-right: 0; 
 }
 
 nav .navbar-toggler {
@@ -56,50 +58,38 @@ nav .navbar-toggler {
   padding: 0.15rem 0.5rem;
 }
 
-nav #navIcons {
+nav #phoneIcon {
   display: flex;
   align-items: center;
-  position: relative;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-#navIcons span {
-  position: absolute;
-  right: 0;
+#phoneIcon a {
+  border: none;
 }
 
 #navbarButtons .navbar-nav, #copy h1 {
   white-space: nowrap;
 }
 
-
 #navbarButtons {
   text-align: center;
   font-size: 24px;
-
 }
+
 #navbarButtons ul {
   height: 100vh;
 }
 
-/*#navbarButtons li {
-  padding: .7rem 0;
-}
-*/
-
-/*#navbarButtons .nav-item {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-}*/
-
 .nav-item hr {
   border-top: 3px solid white;
-/*  margin-bottom: 2rem;*/
 }
 
 .nav-item .dropdown-menu {
   padding: 0px;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 #navOrderButton {
@@ -108,12 +98,7 @@ nav #navIcons {
   font-size: 24px;
 }
 
-#phoneIcon {
-  border: none;
-}
-
 #hero {
-  border-radius: 0;
   background-color: #212529;
   margin-bottom: 15px;
   padding-bottom: 2%;
@@ -123,7 +108,7 @@ nav #navIcons {
   background-color: #212529;
 }
 
-.carousel-control-prev svg, .carousel-control-next svg {
+.carousel-control-prev i, .carousel-control-next i {
   color: #212529;
 }
 
@@ -136,13 +121,13 @@ nav #navIcons {
   font-size: 22px;
   color: #8B7A53;
   font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 #heroButton {
   margin-top: 2%;
   white-space: nowrap;
 }
-
 
 #heroButton a {   /* Buttons on the Jumbotron */
   color: white;
@@ -156,7 +141,6 @@ nav #navIcons {
 }
 
 #homeInfo {
-  padding-top: 15px;
   padding-bottom: 15px;
 }
 
@@ -169,17 +153,17 @@ nav #navIcons {
   font-weight: bold;
 }
 
-#custormerReview svg {
+#custormerReview i {
   color: #8B7A53;
   opacity: 0.5;
 }
 
-#custormerReview .fa-quote-left {
+#custormerReview .icon-quote-left {
   position: absolute;
   top: 10%;
   left: 0;
 }
-#custormerReview .fa-quote-right {
+#custormerReview .icon-quote-right {
   position: absolute;
   right: 0;
   bottom: 10%;
@@ -190,22 +174,13 @@ nav #navIcons {
   font-style: italic;
 }
 
-#contactsTile {
-  background: url('https://via.placeholder.com/300x200.png') no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 160px;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-#homeInfo ul {
+.open-hours ul {
   list-style-type: none;
   padding-left: 0px;
   font-size: 18px;
 }
 
-#homeInfo li:nth-child(3) {
+.open-hours li span {
   font-size: 15px;
 }
 
@@ -216,7 +191,7 @@ nav #navIcons {
   padding-bottom: 30px;
 }
 
-#aboutUs .col-md-6 {
+#aboutUs .about-us-content {
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
@@ -262,21 +237,14 @@ footer a:hover, footer a:active {
 .social-media-links a {
   color: white;
 }
+/* --End of index.html styles----------------- */
 
-/* --End of index.html styles---------------------- */
-
-/* --Start of dinner-menu.html and lunch-menu.html styles--------------------- */
+/* --Start of dinner-menu.html and lunch-menu.html styles---- */
 .container-fluid.main-start.menu-container {
   padding-left: 0;
-  padding-right: 0;
-}
-
-.lunch-menu-container h1 {
-  display: inline;
-}
-
-#lunchMenuImage {
-  width: 100%;
+  padding-right: 5px;
+  max-width: 940px;
+  margin-left: 0;
 }
 
 .menu-container .row {
@@ -292,6 +260,8 @@ footer a:hover, footer a:active {
 #verticalMenuNav h1 {
   font-size: 16px;
   font-weight: bold;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #verticalMenuNav h1, #switchMenu {
@@ -354,15 +324,15 @@ footer.menu-footer {
 #menuDownload {
   font-size: 12px;
 }
-/* --End of menu.html styles----------------------- */
+/* --End of menu.html styles----------- */
 
-/* --Start of contact.html styles------------------- */
+/* --Start of contact.html styles-------- */
 .contact-container h5 {
   font-weight: bold;
   font-size: 23px;
 }
 
-#contactDetailsList, #openHoursList, #location p {
+#contactDetailsList, #location p {
   font-size: 18px;
 }
 
@@ -377,19 +347,6 @@ footer.menu-footer {
   cursor: pointer;
 }
 
-#contactDetailsList svg {
-  cursor: pointer;
-}
-
-#openHoursList {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#openHoursList li span {
-  font-size: 15px;
-}
-
 footer.contact-footer {
   font-size: 11px;
   position: fixed;
@@ -399,7 +356,13 @@ footer.contact-footer {
 
 /* --End of contact.html styles----------------- */
 
-/* --Start of terms-and-conditions.html styles------------------- */
+/* --Start of terms-and-conditions.html styles------ */
+.legal-statement.container-fluid {
+  max-width: 935px;
+  margin-left: 0;
+}
+/* --End of terms-and-conditions.html styles---------*/
+
 
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
@@ -419,27 +382,18 @@ footer.contact-footer {
   #goToTop a {
     font-size: 16px;
   }
-  #legalLink a {
-  position: absolute;
-  bottom: 0;
-  right: 30px;
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #navbarButtons, #navPhoneButton, #navOrderButton {
-    font-size: 0.7rem;
+    font-size: 17px;
   }
   #navbarButtons ul {
     height: inherit;
   }
-  #navbarButtons li.nav-item {
-  padding-top: 0;
-  padding-bottom: 0;
-  }
   .nav-item .dropdown-menu {
-    font-size: 0.6rem;
+    font-size: 14px;
   }
   #navOrderButton {
     background-color: #343A40;
@@ -451,10 +405,10 @@ footer.contact-footer {
   #homeInfo h2, #aboutUs h3 {
     font-size: 18px;
   }
-  #homeInfo li, #custormerReview p, #aboutUs p {
+  .open-hours-home li, #custormerReview p, #aboutUs p {
     font-size: 15px
   }
-  #homeInfo li:nth-child(3) {
+  .open-hours-home li span {
   font-size: 12px;
   }
   #verticalMenuNav h1 {
@@ -472,7 +426,6 @@ footer.contact-footer {
   .contact-container h5 {
   font-size: 18px;
   }
-
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -484,23 +437,21 @@ footer.contact-footer {
   #copy h1 {
     font-size: 27px;
   }
-
   #heroButton a, #homeInfo h2, #aboutUs h3 {
     font-size: 22px;
   }
-  #homeInfo li, #custormerReview p, #aboutUs p {
+  .open-hours-home li, #custormerReview p, #aboutUs p {
     font-size: 19px
   }
-  #homeInfo li:nth-child(3) {
+  .open-hours li span {
   font-size: 16px;
   }
-  .social-media-links svg {
-    font-size: 1.5rem;
+  .social-media-links i {
+    font-size: 1.2rem;
   }
   #verticalMenuNav h2 {
   font-size: 1.5rem;
   }
-
   #v-pills-tab .nav-link {
     font-size: 20px;
   }
@@ -519,11 +470,8 @@ footer.contact-footer {
   .contact-container h5 {
   font-size: 22px;
   }
-  #contactDetailsList, #openHoursList, #location p {
+  #contactDetailsList, #location p {
   font-size: 19px;
-  }
-  #openHoursList li span {
-    font-size: 16px;
   }
 }
 
@@ -541,13 +489,15 @@ footer.contact-footer {
   }
 }
 
+/* Landscape mode */
 @media (min-aspect-ratio: 3/4) {
   #menuDownload br {
     display: none;
   }
 }
 
-@media (min-height: 600px) {
+/* Extra small and Small device with large height */
+@media (min-height: 700px) and (max-width: 767px) {
   #navbarButtons .nav-item {
   padding-top: .5rem;
   padding-bottom: .5rem;

@@ -12,21 +12,19 @@
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-TRFZTNC');</script>
-  <!-- End Google Tag Manager -->
-
+    <!-- End Google Tag Manager -->
+    <!-- Fave icon -->
     <link rel="icon" href="image/favicon.ico">
 
     <title>Daphne's Restaurant</title>
-    <script defer src="fontawesome/js/all.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Fontello icons -->
+    <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
+    <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-
-
-<!--     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/"> -->
-
     <!-- Bootstrap core CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -44,9 +42,9 @@
 
         <a id="logo" class="col-2 order-md-first" href="#"><img src="image/logo.png"></a>
 
-        <div id="navIcons" class="col-5 d-md-none">
-          <span>
-            <a id="phoneIcon" class="navbar-toggler" href="tel:033-488-988"><i class="fas fa-phone fa-lg"></i></a>
+        <div id="phoneIcon" class="col-5 d-md-none">
+          <span class="ml-auto">
+            <a class="navbar-toggler" href="tel:033-488-988"><i class="icon-phone-1"></i></a>
           </span>
         </div>
 
@@ -75,8 +73,8 @@
             <li class="nav-item d-md-none">
               <hr>
               <div class="social-media-links d-flex justify-content-around">
-                <a href="https://www.facebook.com/daphnesrestaurantchristchurch/" target="_blank"><span class="fab fa-facebook-square fa-lg"></span></a>
-                <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g255118-d5111546-Reviews-Daphnes_Restaurant-Christchurch_Canterbury_Region_South_Island.html?m=19905" target="_blank"><span class="fab fa-tripadvisor fa-lg"></span></a>
+                <a href="https://www.facebook.com/daphnesrestaurantchristchurch/" target="_blank"><i class="icon-facebook-squared"></i></a>
+                <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g255118-d5111546-Reviews-Daphnes_Restaurant-Christchurch_Canterbury_Region_South_Island.html?m=19905" target="_blank"><i class="icon-tripadvisor"></i></a>
               </div>
             </li>
           </ul>
@@ -87,48 +85,44 @@
     </nav>
 
     <main role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="dummy-block"></div>
-
       <div id="hero" class="container-fluid main-start">
-          <div class="row">
+        <div class="row">
+          <div id="menuCarousel" class="carousel slide col-md-6 order-md-last" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#menuCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#menuCarousel" data-slide-to="1"></li>
+              <li data-target="#menuCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="dinner-menu.html"><img src="image/carousel_image1.jpg" class="d-block w-100" alt="Image of Shumai"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="dinner-menu.html"><img src="image/carousel_image2.jpg" class="d-block w-100" alt="Image of Shumai"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="dinner-menu.html"><img src="image/carousel_image3.jpg" class="d-block w-100" alt="Image of Shumai"></a>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#menuCarousel" role="button" data-slide="prev">
+              <i class="icon-left-open"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#menuCarousel" role="button" data-slide="next">
+              <i class="icon-right-open"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
-        <div id="menuCarousel" class="carousel slide col-md-6 order-md-last" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#menuCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#menuCarousel" data-slide-to="1"></li>
-            <li data-target="#menuCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="dinner-menu.html"><img src="image/carousel_image1.jpg" class="d-block w-100" alt="Image of Shumai"></a>
-            </div>
-            <div class="carousel-item">
-              <a href="dinner-menu.html"><img src="image/carousel_image2.jpg" class="d-block w-100" alt="Image of Shumai"></a>
-            </div>
-            <div class="carousel-item">
-              <a href="dinner-menu.html"><img src="image/carousel_image3.jpg" class="d-block w-100" alt="Image of Shumai"></a>
+          <div id="copy" class="col-md-6 order-md-first">
+            <h1 class="d-none d-md-block">Authentic Chinese Restaurant<br>
+            Open 7 Days in Christchurch</h1>
+            <div id="heroButton" class="d-flex justify-content-around">
+              <span><a class="btn btn-md" href="tel:033-488-988" role="button">Order with Phone</a></span>
+              <span><a class="btn btn-md" href="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" target="_blank" role="button">Order Online</a></span>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#menuCarousel" role="button" data-slide="prev">
-            <i class="fas fa-angle-left fa-lg"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#menuCarousel" role="button" data-slide="next">
-            <i class="fas fa-angle-right fa-lg"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-        <div id="copy" class="col-md-6 order-md-first">
-          <h1 class="d-none d-md-block">Authentic Chinese Restaurant<br>
-          Open 7 Days in Christchurch</h1>
-          <div id="heroButton" class="d-flex justify-content-around">
-            <span><a class="btn btn-md" href="tel:033-488-988" role="button">Order with Phone</a></span>
-            <span><a class="btn btn-md" href="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" target="_blank" role="button">Order Online</a></span>
-          </div>
-        </div>
 
         </div>
       </div>
@@ -138,8 +132,8 @@
         <div class="row">
           <div id="custormerReview" class="col-md-6 col-sm-12">
             <h2>Customer's Review</h2>
-            <i class="fas fa-quote-left fa-2x"></i>
-            <i class="fas fa-quote-right fa-2x"></i>
+            <i class="icon-quote-left"></i>
+            <i class="icon-quote-right"></i>
             <div class="container-fluid">
               <div class="row">
                 <p class="col-sm-6">Amazing food as always. Comes out fresh and fast from the kitchen.  Good value. None of us went home hungry! We even got given vouchers for our next visit</p>
@@ -156,21 +150,20 @@
             <hr class="d-block d-sm-none">
           </div>
 
-          <div class="col-sm-6 col-md-3">
+          <div class="open-hours open-hours-home col-sm-6 col-md-3">
             <h2>Opening Hours</h2>
             <ul>
               <li>Open 7 Days</li>
-              <li>Lunch: 11am – 3pm</li>
-              <li>(&#42;&#42;Dim sum:  11am – 2:30pm)</li>
+              <li>Lunch: 11am – 3pm <br><span>(&#42;&#42;Dim sum:  11am – 2:30pm)</span></li>
               <li>Dinner: 5pm – 10pm</li>
             </ul>
           </div>
         </div>
-      </div> <!-- /container -->
+      </div> <!-- #homeInfo.container-fluid -->
 
       <div id="aboutUs" class="container-fluid">
         <div class="row">
-          <div class="col-md-6 offset-md-6">
+          <div class="about-us-content col-md-6 offset-md-6">
             <h3>Our Background<br>How We Started</h3>
             <p>Established in 2010, our aim is to offer the Christchurch community a wide variety of authentic Chinese cuisine and a memorable dining experience.</p>
             <p>At Daphne’s we use only the finest fresh seasonal ingredients sourced locally and around New Zealand to provide high quality Chinese food and this is reflected in the great success that Daphne’s Restaurant is receiving.</p>
@@ -183,8 +176,8 @@
       <hr>
       <div class="social-media-links d-flex justify-content-around">
 
-        <a href="https://www.facebook.com/daphnesrestaurantchristchurch/" target="_blank"><span class="fab fa-facebook-square fa-lg"></span></a>
-        <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g255118-d5111546-Reviews-Daphnes_Restaurant-Christchurch_Canterbury_Region_South_Island.html?m=19905" target="_blank"><span class="fab fa-tripadvisor fa-lg"></span></a>
+        <a href="https://www.facebook.com/daphnesrestaurantchristchurch/" target="_blank"><i class="icon-facebook-squared"></i></a>
+        <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g255118-d5111546-Reviews-Daphnes_Restaurant-Christchurch_Canterbury_Region_South_Island.html?m=19905" target="_blank"><i class="icon-tripadvisor"></i></a>
       </div>
     </div>
 
