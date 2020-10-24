@@ -53,10 +53,99 @@ nav #menuBarToggler {
   padding-right: 0; 
 }
 
-nav .navbar-toggler {
-  font-size: 1rem;
-  padding: 0.15rem 0.5rem;
+#menuBarToggler .navbar-toggler {
+  border: none;
 }
+
+button.hamburger-menu:focus, button.hamburger-menu:hover {
+  outline: none;
+}
+/* Animated icon styling from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ */
+.animated-icon {
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon span {
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon span {
+background: #f3e5f5;
+}
+
+.animated-icon span:nth-child(1) {
+top: 0px;
+-webkit-transform-origin: left center;
+-moz-transform-origin: left center;
+-o-transform-origin: left center;
+transform-origin: left center;
+}
+
+.animated-icon span:nth-child(2) {
+top: 10px;
+-webkit-transform-origin: left center;
+-moz-transform-origin: left center;
+-o-transform-origin: left center;
+transform-origin: left center;
+}
+
+.animated-icon span:nth-child(3) {
+top: 20px;
+-webkit-transform-origin: left center;
+-moz-transform-origin: left center;
+-o-transform-origin: left center;
+transform-origin: left center;
+}
+
+.animated-icon.show span:nth-child(1) {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+top: 0px;
+left: 8px;
+}
+
+.animated-icon.show span:nth-child(2) {
+width: 0%;
+opacity: 0;
+}
+
+.animated-icon.show span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+top: 21px;
+left: 8px;
+} /*End of animated icon styling*/
+
 
 nav #phoneIcon {
   display: flex;
@@ -67,6 +156,7 @@ nav #phoneIcon {
 
 #phoneIcon a {
   border: none;
+  color: #f3e5f5;
 }
 
 #navbarButtons .navbar-nav, #copy h1 {
@@ -96,6 +186,10 @@ nav #phoneIcon {
   background: none;
   border: none;
   font-size: 24px;
+}
+
+#navOrderButton:focus {
+  outline: none;
 }
 
 #hero {
