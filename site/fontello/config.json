@@ -37,16 +37,16 @@
       "src": "fontawesome"
     },
     {
-      "uid": "c311c48d79488965b0fab7f9cd12b6b5",
+      "uid": "d870630ff8f81e6de3958ecaeac532f2",
       "css": "left-open",
-      "code": 59392,
-      "src": "entypo"
+      "code": 59229,
+      "src": "fontawesome"
     },
     {
-      "uid": "749e7d90a9182938180f1d2d8c33584e",
+      "uid": "399ef63b1e23ab1b761dfbb5591fa4da",
       "css": "right-open",
-      "code": 59394,
-      "src": "entypo"
+      "code": 59230,
+      "src": "fontawesome"
     }
   ]
 }
