@@ -311,6 +311,13 @@ nav #phoneIcon {
   color: white;
 }
 
+.MIT-license {
+  font-size: 10px;
+  background-color: #8B7A53;
+  color: white;
+  text-align: center;
+}
+
 footer {
   font-size: 11px;
   text-align: center;
