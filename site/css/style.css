@@ -279,7 +279,7 @@ nav #phoneIcon {
 }
 
 #aboutUs {
-  background: url('../image/aboutUsBgi.jpg') no-repeat center;
+  background: url('../image/aboutUsBgi_sm.jpg') no-repeat center;
   background-size: cover;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -507,6 +507,9 @@ footer.contact-footer {
   }
   #homeInfo h2, #aboutUs h3 {
     font-size: 18px;
+  }
+  #aboutUs {
+  background: url('../image/aboutUsBgi.jpg') no-repeat center;
   }
   .open-hours-home li, #custormerReview p, #aboutUs p {
     font-size: 15px
