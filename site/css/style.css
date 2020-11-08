@@ -44,6 +44,8 @@ nav #logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 57px;
+  width: 130px;
 }
 
 nav #menuBarToggler {
