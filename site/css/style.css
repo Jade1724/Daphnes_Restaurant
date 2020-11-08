@@ -392,7 +392,8 @@ footer a:hover, footer a:active {
 }
 
 #switchMenu {
-/*  margin-top: 5%;*/
+  padding-left: 4px;
+  padding-right: 4px;
   font-size: 12px;
 }
 
