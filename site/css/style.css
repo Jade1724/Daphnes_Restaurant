@@ -467,6 +467,10 @@ footer.contact-footer {
 .legal-statement.container-fluid {
   max-width: 935px;
 }
+
+h5 {
+  font-weight: bold;
+}
 /* --End of terms-and-conditions.html styles---------*/
 
 
