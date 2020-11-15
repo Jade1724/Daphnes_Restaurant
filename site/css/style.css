@@ -200,6 +200,17 @@ nav #phoneIcon {
   padding-bottom: 2%;
 }
 
+.carousel-inner {
+  position: relative;
+  height: 0;
+  padding-top: calc(491/700*100%);
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .carousel-indicators li {
   background-color: #212529;
 }
@@ -318,6 +329,11 @@ nav #phoneIcon {
   background-color: #8B7A53;
   color: white;
   text-align: center;
+}
+
+.MIT-license a {
+  color: white;
+  text-decoration: underline;
 }
 
 footer {
