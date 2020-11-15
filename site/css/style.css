@@ -52,7 +52,7 @@ nav #menuBarToggler {
   display: flex;
   align-items: center;
   padding-left: 0;
-  padding-right: 0; 
+  padding-right: 0;
 }
 
 #menuBarToggler .navbar-toggler {
@@ -159,6 +159,11 @@ nav #phoneIcon {
 #phoneIcon a {
   border: none;
   color: #f3e5f5;
+}
+
+#phoneIcon i.icon-phone-1 {
+  font-size: 25px;
+  line-height: 0;
 }
 
 #navbarButtons .navbar-nav, #copy h1 {
