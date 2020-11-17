@@ -36,12 +36,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <nav class="navbar navbar-expand-md navbar-dark fixed-top container-fluid">
       <div class="row">
         <div  id="menuBarToggler" class="col-5 d-md-none">
-          <button class="navbar-toggler hamburger-menu" type="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar-toggler hamburger-menu" role="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false">
             <div class="animated-icon"><span></span><span></span><span></span></div>
-          </button>
+          </div>
         </div>
 
-        <a id="logo" class="col-2 order-md-first" href="index.html"><img src="image/logo.png"></a>
+        <a id="logo" class="col-2 order-md-first" href="index.html"><img src="image/logo.png" alt="Restaurant logo image"></a>
 
         <div id="phoneIcon" class="col-5 d-md-none">
           <span class="ml-auto">
@@ -55,8 +55,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active dropdown">
-              <a class="nav-link dropdown-toggle"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+              <div class="dropdown-menu">
                 <a class="dropdown-item active" href="#">Lunch</a>
                 <a class="dropdown-item" href="dinner-menu.html">Wine &amp; Dinner</a>
                 <a class="dropdown-item" href="set-menu.html">Set Menu</a>
@@ -66,10 +66,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item d-none d-md-block">
-              <a href="tel:033-488-988"><button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button></a>
+              <form action="tel:033-488-988" method="get">
+                <button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button>
+              </form>
             </li>
             <li class="nav-item">
-              <a href="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" target="_blank"><button id="navOrderButton" class="btn btn-dark" type="submit">Order Online</button></a>
+              <form action="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" method="get" target="_blank">
+                <button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button>
+              </form>
             </li>
             <li class="nav-item d-md-none">
               <hr>
@@ -86,7 +90,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-    <main role="main">
+    <main>
       <div id="menuTop" class="dummy-block"></div>
       <div class="container-fluid main-start menu-container">
         <div class="row">
@@ -101,7 +105,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
 
           <div class="tab-content col-9" id="v-pills-tabContent">
-            <div class="tab-pane active" role="tabpanel" aria-labelledby="v-pills-lunch-tab">
+            <div class="tab-pane active" role="tabpanel">
               <img src="image/lunch1.jpg" alt="Lunch menu 1" />
               <img src="image/lunch2.jpg" alt="Lunch menu 1" />
               <img src="image/lunch3.jpg" alt="Lunch menu 1" />
@@ -115,7 +119,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="dummy-block"></div>
 
     <footer class="menu-footer">
-      <a href="image/lunch_menu.pdf" target="_blank"><button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download <br>Lunch Menu</button></a>
+      <form action="image/lunch_menu.pdf" method="get" target="_blank">
+        <button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download <br>Lunch Menu</button>
+      </form>
+
       <div>All rights reserved &copy; 2020 Daphne's Company Ltd</div>
       <div>
         <span><a href="terms-and-conditions.html#termsAndConditions">Terms and Conditions</a></span>

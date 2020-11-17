@@ -35,12 +35,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <nav class="navbar navbar-expand-md navbar-dark fixed-top container-fluid">
       <div class="row">
         <div  id="menuBarToggler" class="col-5 d-md-none">
-          <button class="navbar-toggler hamburger-menu" type="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar-toggler hamburger-menu" role="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false">
             <div class="animated-icon"><span></span><span></span><span></span></div>
-          </button>
+          </div>
         </div>
 
-        <a id="logo" class="col-2 order-md-first" href="index.html"><img src="image/logo.png"></a>
+        <a id="logo" class="col-2 order-md-first" href="index.html"><img src="image/logo.png" alt="Restaurant logo image"></a>
 
         <div id="phoneIcon" class="col-5 d-md-none">
           <span class="ml-auto">
@@ -54,8 +54,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item active dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu <span class="sr-only">(current)</span></a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu <span class="sr-only">(current)</span></a>
+              <div class="dropdown-menu">
                 <a class="dropdown-item" href="lunch-menu.html">Lunch</a>
                 <a class="dropdown-item" href="dinner-menu.html">Wine &amp; Dinner</a>
                 <a class="dropdown-item active" href="#">Set Menu</a>
@@ -65,10 +65,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item d-none d-md-block">
-              <a href="tel:033-488-988"><button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button></a>
+              <form action="tel:033-488-988" method="get">
+                <button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button>
+              </form>
             </li>
             <li class="nav-item">
-              <a href="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" target="_blank"><button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button></a>
+              <form action="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" method="get" target="_blank">
+                <button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button>
+              </form>
             </li>
             <li class="nav-item d-md-none">
               <hr>
@@ -84,16 +88,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-    <main role="main">
+    <main>
       <div id="menuTop" class="dummy-block"></div>
       <div class="container-fluid main-start menu-container">
         <div class="row">
           <div id="verticalMenuNav" class="col-3">
             <h1>Set Menu</h1>
           <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" data-toggle="pill" href="#v-setMenu1" role="tab" aria-controls="v-pills-set-menu-1" aria-selected="true">Set Menu 1</a>
-            <a class="nav-link" data-toggle="pill" href="#v-setMenu2" role="tab" aria-controls="v-pills-set-menu-2" aria-selected="false">Set Menu 2</a>
-            <a class="nav-link" data-toggle="pill" href="#v-setMenu3" role="tab" aria-controls="v-pills-set-menu-3" aria-selected="false">Set Menu 3</a>
+            <a class="nav-link active" id="setMenu1Tab" data-toggle="pill" href="#v-setMenu1" role="tab" aria-controls="v-setMenu1" aria-selected="true">Set Menu 1</a>
+            <a class="nav-link" id="setMenu2Tab" data-toggle="pill" href="#v-setMenu2" role="tab" aria-controls="v-setMenu2" aria-selected="false">Set Menu 2</a>
+            <a class="nav-link" id="setMenu3Tab" data-toggle="pill" href="#v-setMenu3" role="tab" aria-controls="v-setMenu3" aria-selected="false">Set Menu 3</a>
           </div>
 
           <div id="switchMenu">
@@ -103,23 +107,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         </div>
           <div class="tab-content col-9" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-setMenu1" role="tabpanel" aria-labelledby="v-pills-set-menu-1-tab">
+            <div class="tab-pane fade show active" id="v-setMenu1" role="tabpanel" aria-labelledby="setMenu1Tab">
               <img srcset="image/set_menu1_sm.jpg 400w, image/set_menu1.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/set_menu1.jpg"
-                  alt="set menu 1" width="100%">
+                  alt="set menu 1" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-setMenu2" role="tabpanel" aria-labelledby="v-pills-set-menu-2-tab">
+            <div class="tab-pane fade" id="v-setMenu2" role="tabpanel" aria-labelledby="setMenu2Tab">
               <img srcset="image/set_menu2_sm.jpg 400w, image/set_menu2.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/set_menu2.jpg"
-                  alt="set menu 2" width="100%">
+                  alt="set menu 2" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-setMenu3" role="tabpanel" aria-labelledby="v-pills-set-menu-3-tab">
+            <div class="tab-pane fade" id="v-setMenu3" role="tabpanel" aria-labelledby="setMenu3Tab">
               <img srcset="image/set_menu3_sm.jpg 400w, image/set_menu3.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/set_menu3.jpg"
-                  alt="set menu 3" width="100%">
+                  alt="set menu 3" style="width:100%;">
             </div>
           </div> <!-- .tab-content #v-pills-tabContent -->
 
@@ -132,7 +136,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="dummy-block"></div>
 
     <footer class="menu-footer">
-      <a href="image/set_menus.pdf" target="_blank"><button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download <br>Set Menu</button></a>
+      <form action="image/set_menus.pdf" method="get" target="_blank">
+        <button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download <br>Set Menu</button>
+      </form>
       <div >All rights reserved &copy; 2020 Daphne's Company Ltd</div>
       <div>
         <span><a href="terms-and-conditions.html#termsAndConditions">Terms and Conditions</a></span>

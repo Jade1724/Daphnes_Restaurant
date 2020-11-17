@@ -34,12 +34,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <nav class="navbar navbar-expand-md navbar-dark fixed-top container-fluid">
       <div class="row">
         <div  id="menuBarToggler" class="col-5 d-md-none">
-          <button class="navbar-toggler hamburger-menu" type="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar-toggler hamburger-menu" role="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false">
             <div class="animated-icon"><span></span><span></span><span></span></div>
-          </button>
+          </div>
         </div>
 
-        <a id="logo" class="col-2 order-md-first" href="index.html"><img src="image/logo.png"></a>
+        <a id="logo" class="col-2 order-md-first" href="index.html"><img src="image/logo.png" alt="Restaurant logo image"></a>
 
         <div id="phoneIcon" class="col-5 d-md-none">
           <span class="ml-auto">
@@ -53,8 +53,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item active dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu <span class="sr-only">(current)</span></a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu <span class="sr-only">(current)</span></a>
+              <div class="dropdown-menu">
                 <a class="dropdown-item" href="lunch-menu.html">Lunch</a>
                 <a class="dropdown-item active" href="#">Wine &amp; Dinner</a>
                 <a class="dropdown-item" href="set-menu.html">Set Menu</a>
@@ -64,10 +64,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item d-none d-md-block">
-              <a href="tel:033-488-988"><button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button></a>
+              <form action="tel:033-488-988" method="get">
+                <button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button>
+              </form>
             </li>
             <li class="nav-item">
-              <a href="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" target="_blank"><button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button></a>
+              <form action="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" method="get" target="_blank">
+                <button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button>
+              </form>
             </li>
             <li class="nav-item d-md-none">
               <hr>
@@ -84,7 +88,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-    <main role="main">
+    <main>
       <div id="menuTop" class="dummy-block"></div>
       <div class="container-fluid main-start menu-container">
         <div class="row">
@@ -92,16 +96,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h1>Wine &amp; Dinner</h1>
 
           <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active" data-toggle="pill" href="#v-wine" role="tab" aria-controls="v-pills-wine" aria-selected="true">Wine</a>
-            <a class="nav-link" data-toggle="pill" href="#v-entree" role="tab" aria-controls="v-pills-entree" aria-selected="false">Entree</a>
-            <a class="nav-link" data-toggle="pill" href="#v-soup" role="tab" aria-controls="v-pills-soup" aria-selected="false">Soup</a>
-            <a class="nav-link" data-toggle="pill" href="#v-seafood" role="tab" aria-controls="v-pills-seafood" aria-selected="false">Seafood</a>
-            <a class="nav-link" data-toggle="pill" href="#v-pork" role="tab" aria-controls="v-pills-pork" aria-selected="false">Pork</a>
-            <a class="nav-link" data-toggle="pill" href="#v-beefLambVenison" role="tab" aria-controls="v-pills-beef-lamb-venison" aria-selected="false">Beef/Lamb/<br>Venison</a>
-            <a class="nav-link" data-toggle="pill" href="#v-chickenDuck" role="tab" aria-controls="v-pills-chicken-duck" aria-selected="false">Chicken/<br>Duck</a>
-            <a class="nav-link" data-toggle="pill" href="#v-fooYoungVegetable" role="tab" aria-controls="v-pills-fooyoung-vegetable" aria-selected="false">Foo Young/<br>Vegetables</a>
-            <a class="nav-link" data-toggle="pill" href="#v-riceNoodle" role="tab" aria-controls="v-pills-rice-noodles" aria-selected="false">Rice/Noodles</a>
-            <a class="nav-link" data-toggle="pill" href="#v-dessert" role="tab" aria-controls="v-pills-dessert" aria-selected="false">Dessert</a>
+            <a class="nav-link active" id="wineTab" data-toggle="pill" href="#v-wine" role="tab" aria-controls="v-wine" aria-selected="true">Wine</a>
+            <a class="nav-link" id="entreeTab" data-toggle="pill" href="#v-entree" role="tab" aria-controls="v-entree" aria-selected="false">Entree</a>
+            <a class="nav-link" id="soupTab" data-toggle="pill" href="#v-soup" role="tab" aria-controls="v-soup" aria-selected="false">Soup</a>
+            <a class="nav-link" id="seafoodTab" data-toggle="pill" href="#v-seafood" role="tab" aria-controls="v-seafood" aria-selected="false">Seafood</a>
+            <a class="nav-link" id="porkTab" data-toggle="pill" href="#v-pork" role="tab" aria-controls="v-pork" aria-selected="false">Pork</a>
+            <a class="nav-link" id="beefLambVenisonTab" data-toggle="pill" href="#v-beefLambVenison" role="tab" aria-controls="v-beefLambVenison" aria-selected="false">Beef/Lamb/<br>Venison</a>
+            <a class="nav-link" id="chickenDuckTab" data-toggle="pill" href="#v-chickenDuck" role="tab" aria-controls="v-chickenDuck" aria-selected="false">Chicken/<br>Duck</a>
+            <a class="nav-link" id="fooYoungVegetablesTab" data-toggle="pill" href="#v-fooYoungVegetable" role="tab" aria-controls="v-fooYoungVegetable" aria-selected="false">Foo Young/<br>Vegetables</a>
+            <a class="nav-link" id="riceNoodleTab" data-toggle="pill" href="#v-riceNoodle" role="tab" aria-controls="v-riceNoodle" aria-selected="false">Rice/Noodles</a>
+            <a class="nav-link" id="dessertTab" data-toggle="pill" href="#v-dessert" role="tab" aria-controls="v-dessert" aria-selected="false">Dessert</a>
           </div>
 
           <div id="switchMenu">
@@ -111,119 +115,119 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         </div>
           <div class="tab-content col-9" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-wine" role="tabpanel" aria-labelledby="v-pills-wine-tab">
+            <div class="tab-pane fade show active" id="v-wine" role="tabpanel" aria-labelledby="wineTab">
               <!-- <img src="image/wine1.jpg" alt="wine menu 1"> -->
               <img srcset="image/wine1_sm.jpg 400w, image/wine1.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/wine1.jpg"
-                  alt="wine menu 1" width="100%">
+                  alt="wine menu 1" style="width:100%;">
               <!-- <img src="image/wine2.jpg" alt="wine menu 2"> -->
               <img srcset="image/wine2_sm.jpg 400w, image/wine2.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/wine2.jpg"
-                  alt="wine menu 2" width="100%">
+                  alt="wine menu 2" style="width:100%;">
               <img srcset="image/wine3_sm.jpg 400w, image/wine3.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/wine3.jpg"
-                  alt="wine menu 3" width="100%">
+                  alt="wine menu 3" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-entree" role="tabpanel" aria-labelledby="v-pills-entree-tab">
+            <div class="tab-pane fade" id="v-entree" role="tabpanel" aria-labelledby="entreeTab">
               <img srcset="image/entree_sm.jpg 400w, image/entree.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/entree.jpg"
-                  alt="entree menu" width="100%">
+                  alt="entree menu" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-soup" role="tabpanel" aria-labelledby="v-pills-soup-tab">
+            <div class="tab-pane fade" id="v-soup" role="tabpanel" aria-labelledby="soupTab">
               <img srcset="image/soup_sm.jpg 400w, image/soup.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/soup.jpg"
-                  alt="soup menu" width="100%">
+                  alt="soup menu" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-seafood" role="tabpanel" aria-labelledby="v-pills-seafood-tab">
+            <div class="tab-pane fade" id="v-seafood" role="tabpanel" aria-labelledby="seafoodTab">
               <img srcset="image/seafood1_sm.jpg 400w, image/seafood1.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/seafood1.jpg"
-                  alt="seafood menu 1" width="100%">
+                  alt="seafood menu 1" style="width:100%;">
               <img srcset="image/seafood2_sm.jpg 400w, image/seafood2.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/seafood2.jpg"
-                  alt="seafood menu 2" width="100%">
+                  alt="seafood menu 2" style="width:100%;">
               <img srcset="image/seafood3_sm.jpg 400w, image/seafood3.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/seafood3.jpg"
-                  alt="seafood menu 3" width="100%">
+                  alt="seafood menu 3" style="width:100%;">
               <img srcset="image/seafood4_sm.jpg 400w, image/seafood4.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/seafood4.jpg"
-                  alt="seafood menu 4" width="100%">
+                  alt="seafood menu 4" style="width:100%;">
               <img srcset="image/seafood5_sm.jpg 400w, image/seafood5.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/seafood5.jpg"
-                  alt="seafood menu 5" width="100%">
+                  alt="seafood menu 5" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-pork" role="tabpanel" aria-labelledby="v-pills-pork-tab">
+            <div class="tab-pane fade" id="v-pork" role="tabpanel" aria-labelledby="porkTab">
               <img srcset="image/pork1_sm.jpg 400w, image/pork1.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/pork1.jpg"
-                  alt="pork menu 1" width="100%">
+                  alt="pork menu 1" style="width:100%;">
               <img srcset="image/pork2_sm.jpg 400w, image/pork2.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/pork2.jpg"
-                  alt="pork menu 2" width="100%">
+                  alt="pork menu 2" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-beefLambVenison" role="tabpanel" aria-labelledby="v-pills-beef-lamb-venison-tab">
+            <div class="tab-pane fade" id="v-beefLambVenison" role="tabpanel" aria-labelledby="beefLambVenisonTab">
               <img srcset="image/beef_lamb_venison1_sm.jpg 400w, image/beef_lamb_venison1.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/beef_lamb_venison1.jpg"
-                  alt="beef lamb venison menu page 1" width="100%">
+                  alt="beef lamb venison menu page 1" style="width:100%;">
               <img srcset="image/beef_lamb_venison2_sm.jpg 400w, image/beef_lamb_venison2.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/beef_lamb_venison2.jpg"
-                  alt="beef lamb venison menu page 2" width="100%">
+                  alt="beef lamb venison menu page 2" style="width:100%;">
               <img srcset="image/beef_lamb_venison3_sm.jpg 400w, image/beef_lamb_venison3.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/beef_lamb_venison3.jpg"
-                  alt="beef lamb venison menu page 3" width="100%">
+                  alt="beef lamb venison menu page 3" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-chickenDuck" role="tabpanel" aria-labelledby="v-pills-checken-duck-tab">
+            <div class="tab-pane fade" id="v-chickenDuck" role="tabpanel" aria-labelledby="chickenDuckTab">
               <img srcset="image/chicken_duck1_sm.jpg 400w, image/chicken_duck1.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/chicken_duck1.jpg"
-                  alt="chicken duck menu page 1" width="100%">
+                  alt="chicken duck menu page 1" style="width:100%;">
               <img srcset="image/chicken_duck2_sm.jpg 400w, image/chicken_duck2.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/chicken_duck2.jpg"
-                  alt="chicken duck menu page 2" width="100%">
+                  alt="chicken duck menu page 2" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-fooYoungVegetable" role="tabpanel" aria-labelledby="v-pills-fooyoung-vegetable-tab">
+            <div class="tab-pane fade" id="v-fooYoungVegetable" role="tabpanel" aria-labelledby="fooYoungVegetablesTab">
               <img srcset="image/foo_young_sm.jpg 400w, image/foo_young.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/foo_young.jpg"
-                  alt="foo young menu" width="100%">
+                  alt="foo young menu" style="width:100%;">
               <img srcset="image/vegetable1_sm.jpg 400w, image/vegetable1.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/vegetable1.jpg"
-                  alt="vegetable menu page 1" width="100%">
+                  alt="vegetable menu page 1" style="width:100%;">
               <img srcset="image/vegetable2_sm.jpg 400w, image/vegetable2.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/vegetable2.jpg"
-                  alt="vegetable menu page 2" width="100%">
+                  alt="vegetable menu page 2" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-riceNoodle" role="tabpanel" aria-labelledby="v-pills-rice-noodles-tab">
+            <div class="tab-pane fade" id="v-riceNoodle" role="tabpanel" aria-labelledby="riceNoodleTab">
               <img srcset="image/rice_noodle1_sm.jpg 400w, image/rice_noodle1.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/rice_noodle1.jpg"
-                  alt="rice noodle menu page 1" width="100%">
+                  alt="rice noodle menu page 1" style="width:100%;">
               <img srcset="image/rice_noodle2_sm.jpg 400w, image/rice_noodle2.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/rice_noodle2.jpg"
-                  alt="rice noodle menu page 2" width="100%">
+                  alt="rice noodle menu page 2" style="width:100%;">
             </div>
-            <div class="tab-pane fade" id="v-dessert" role="tabpanel" aria-labelledby="v-pills-dessert-tab">
+            <div class="tab-pane fade" id="v-dessert" role="tabpanel" aria-labelledby="dessertTab">
               <img srcset="image/dessert_sm.jpg 400w, image/dessert.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/dessert.jpg"
-                  alt="dessert menu" width="100%">
+                  alt="dessert menu" style="width:100%;">
             </div>
           </div> <!-- .tab-content #v-pills-tabContent -->
 
@@ -236,7 +240,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="dummy-block"></div>
 
     <footer class="menu-footer">
-      <a href="image/takeaway_menu.pdf" target="_blank"><button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download <br>Takeaway Menu</button></a>
+      <form action="image/takeaway_menu.pdf" target="_blank"><button id="menuDownload" class="btn btn-dark btn-sm float-right" type="submit">Download <br>Takeaway Menu</button></form>
       <div >All rights reserved &copy; 2020 Daphne's Company Ltd</div>
       <div>
         <span><a href="terms-and-conditions.html#termsAndConditions">Terms and Conditions</a></span>

@@ -35,12 +35,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <nav class="navbar navbar-expand-md navbar-dark fixed-top container-fluid">
       <div class="row">
         <div  id="menuBarToggler" class="col-5 d-md-none">
-          <button class="navbar-toggler hamburger-menu" type="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar-toggler hamburger-menu" role="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false">
             <div class="animated-icon"><span></span><span></span><span></span></div>
-          </button>
+          </div>
         </div>
 
-        <a id="logo" class="col-2 order-md-first" href="index.html"><img src="image/logo.png"></a>
+        <a id="logo" class="col-2 order-md-first" href="index.html"><img src="image/logo.png" alt="Restaurant logo image"></a>
 
         <div id="phoneIcon" class="col-5 d-md-none">
           <span class="ml-auto">
@@ -51,24 +51,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="collapse navbar-collapse" id="navbarButtons">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mt-3 mt-md-0">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+              <div class="dropdown-menu">
                 <a class="dropdown-item" href="lunch-menu.html">Lunch</a>
                 <a class="dropdown-item" href="dinner-menu.html">Wine &amp; Dinner</a>
                 <a class="dropdown-item" href="set-menu.html">Set Menu</a>
               </div>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item d-none d-md-block">
-              <a href="tel:033-488-988"><button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button></a>
+              <form action="tel:033-488-988" method="get">
+                <button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button>
+              </form>
             </li>
             <li class="nav-item">
-              <a href="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" target="_blank"><button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button></a>
+              <form action="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" method="get" target="_blank">
+                <button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button>
+              </form>
             </li>
             <li class="nav-item d-md-none">
               <hr>
@@ -82,7 +86,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </nav>
 
-  <main role="main">
+  <main>
   <div class="dummy-block"></div>
 
   <div class="container-fluid main-start contact-container">
@@ -117,7 +121,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h5>LOCATION</h5>
         <p>398 Riccarton Rd, Upper Riccarton, Christchurch 8041</p>
         <div class="embed-responsive embed-responsive-21by9">
-          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23138.462363248804!2d172.58246429848646!3d-43.53762547123541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9c55362a077b80e!2sDaphne&#39;s%20Restaurant!5e0!3m2!1sen!2snz!4v1600082639822!5m2!1sen!2snz" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23138.462363248804!2d172.58246429848646!3d-43.53762547123541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9c55362a077b80e!2sDaphne&#39;s%20Restaurant!5e0!3m2!1sen!2snz!4v1600082639822!5m2!1sen!2snz" style="width:100%; height:100%; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </div>
     </div>
