@@ -38,12 +38,12 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top container-fluid">
       <div class="row">
         <div  id="menuBarToggler" class="col-5 d-md-none">
-          <button class="navbar-toggler hamburger-menu" type="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar-toggler hamburger-menu" role="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false">
             <div class="animated-icon"><span></span><span></span><span></span></div>
-          </button>
+          </div>
         </div>
 
-        <a id="logo" class="col-2 order-md-first" href="#"><img src="image/logo.png"></a>
+        <a id="logo" class="col-2 order-md-first" href="#"><img src="image/logo.png" alt="Restaurant logo image"></a>
 
         <div id="phoneIcon" class="col-5 d-md-none">
           <span class="ml-auto">
@@ -57,8 +57,8 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+              <div class="dropdown-menu">
                 <a class="dropdown-item" href="lunch-menu.html">Lunch</a>
                 <a class="dropdown-item" href="dinner-menu.html">Wine &amp; Dinner</a>
                 <a class="dropdown-item" href="set-menu.html">Set Menu</a>
@@ -68,10 +68,14 @@
               <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item d-none d-md-block">
-              <a href="tel:033-488-988"><button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button></a>
+              <form action="tel:033-488-988" method="get">
+                <button id="navPhoneButton" class="btn btn-dark mx-2 my-sm-0" type="submit">Call Us</button>
+              </form>
             </li>
             <li class="nav-item">
-              <a href="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" target="_blank"><button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button></a>
+              <form action="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" method="get" target="_blank">
+                <button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button>
+              </form>
             </li>
             <li class="nav-item d-md-none">
               <hr>
@@ -82,12 +86,10 @@
             </li>
           </ul>
         </div>
-
-        </div>
       </div>
     </nav>
 
-    <main role="main">
+    <main>
       <div class="dummy-block"></div>
       <div id="hero" class="container-fluid main-start">
         <div class="row">
@@ -103,7 +105,7 @@
                   <img srcset="image/carousel_image1_sm.jpg 400w, image/carousel_image1.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/carousel_image1.jpg"
-                  alt="Image of rolled pork and cucumber with garlic dressing" width="100%">
+                  alt="Image of rolled pork and cucumber with garlic dressing" style="width:100%;">
                 </a>
               </div>
               <div class="carousel-item">
@@ -111,7 +113,7 @@
                   <img srcset="image/carousel_image2_sm.jpg 400w, image/carousel_image2.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/carousel_image2.jpg"
-                  alt="Image of poached sliced beef in hot chilli oil" width="100%">
+                  alt="Image of poached sliced beef in hot chilli oil" style="width:100%;">
                 </a>
               </div>
               <div class="carousel-item">
@@ -119,7 +121,7 @@
                   <img srcset="image/carousel_image3_sm.jpg 400w, image/carousel_image3.jpg 700w"
                   sizes="(max-width: 450px) 400px, 700px"
                   src="image/carousel_image3.jpg"
-                  alt="Image of deep fried spicy lamb sparerib" width="100%">
+                  alt="Image of deep fried spicy lamb sparerib" style="width:100%;">
                 </a>
               </div>
             </div>
@@ -163,7 +165,7 @@
           <div class="col-sm-6 col-md-3">
             <h2>Find Us</h2>
             <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23138.462363248804!2d172.58246429848646!3d-43.53762547123541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9c55362a077b80e!2sDaphne&#39;s%20Restaurant!5e0!3m2!1sen!2snz!4v1600082639822!5m2!1sen!2snz" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23138.462363248804!2d172.58246429848646!3d-43.53762547123541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9c55362a077b80e!2sDaphne&#39;s%20Restaurant!5e0!3m2!1sen!2snz!4v1600082639822!5m2!1sen!2snz" style="width:100%; height:100%; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <hr class="d-block d-sm-none">
           </div>
