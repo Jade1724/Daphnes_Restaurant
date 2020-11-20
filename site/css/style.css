@@ -298,7 +298,7 @@ nav #phoneIcon {
 }
 
 #aboutUs {
-  background: url('../image/aboutUsBgi_sm.jpg') no-repeat center;
+  background: url('../image/aboutUsBG_sm.jpg') no-repeat center;
   background-size: cover;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -538,7 +538,7 @@ h5 {
     font-size: 18px;
   }
   #aboutUs {
-  background: url('../image/aboutUsBgi.jpg') no-repeat center;
+  background: url('../image/aboutUsBG.jpg') no-repeat center;
   }
   .open-hours-home li, #custormerReview p, #aboutUs p {
     font-size: 15px
