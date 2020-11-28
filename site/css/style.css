@@ -189,8 +189,8 @@ nav #phoneIcon {
   font-size: 22px;
 }
 
-#menuDropdown.show > a {
-  border: none;
+#menuDropdown > a:focus {
+  outline: none;
 }
 
 #navOrderButton {

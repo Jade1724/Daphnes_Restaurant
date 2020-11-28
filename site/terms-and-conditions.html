@@ -58,7 +58,7 @@
             <li class="nav-item mt-3 mt-md-0">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
+            <li id="menuDropdown" class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="lunch-menu.html">Lunch</a>
@@ -75,8 +75,9 @@
               </form>
             </li>
             <li class="nav-item">
-              <form action="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" method="get" target="_blank">
-                <button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button>
+              <form action="https://www.foodhunter.co.nz/mobile/mmenu.php" method="get" target="_blank">
+                <button id="navOrderButton" class="btn btn-dark my-sm-0" >Order Online</button>
+                <input type="hidden" name="ordering_rest_id" value="323">
               </form>
             </li>
             <li class="nav-item d-md-none">
@@ -173,7 +174,7 @@
         <h5>SECTION 20 - CONTACT INFORMATION</h5>
         <p>Questions about the Terms of Service should be sent to us at <a href="mailto:daphne_kiriaev@hotmail.com">daphne_kiriaev@hotmail.com.</a></p>
         <h2 id="privacyPolicy" class="pt-5">Privacy Policy</h2>
-        <p>This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from <a href="www.daphnesrestaurant.co.nz" target="_blank">www.daphnesrestaurant.co.nz</a> (the “Site”).</p>
+        <p>This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from <a href="index.html" target="_blank">www.daphnesrestaurant.co.nz</a> (the “Site”).</p>
         <h5>PERSONAL INFORMATION WE COLLECT</h5>
         <p>When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products that you view, what websites or search terms referred you to the Site, and information about how you interact with the Site. We refer to this automatically-collected information as “Device Information.”</p>
         <p>We collect Device Information using the following technologies:</p>

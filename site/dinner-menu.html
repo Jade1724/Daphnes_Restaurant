@@ -57,7 +57,7 @@
             <li class="nav-item mt-3 mt-md-0">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item active dropdown">
+            <li id="menuDropdown" class="nav-item active dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu <span class="sr-only">(current)</span></a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="lunch-menu.html">Lunch</a>
@@ -74,8 +74,9 @@
               </form>
             </li>
             <li class="nav-item">
-              <form action="https://www.foodhunter.co.nz/mobile/mmenu.php?ordering_rest_id=323#" method="get" target="_blank">
-                <button id="navOrderButton" class="btn btn-dark my-sm-0" type="submit">Order Online</button>
+              <form action="https://www.foodhunter.co.nz/mobile/mmenu.php" method="get" target="_blank">
+                <button id="navOrderButton" class="btn btn-dark my-sm-0" >Order Online</button>
+                <input type="hidden" name="ordering_rest_id" value="323">
               </form>
             </li>
             <li class="nav-item d-md-none">
