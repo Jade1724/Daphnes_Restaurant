@@ -177,10 +177,11 @@ nav #phoneIcon {
 
 #navbarButtons ul {
   height: 100vh;
+  color: #f3e5f5;
 }
 
 .nav-item hr {
-  border-top: 3px solid white;
+  border-top: 3px solid #f3e5f5;
 }
 
 .nav-item .dropdown-menu {
@@ -333,6 +334,14 @@ nav #phoneIcon {
   color: white;
 }
 
+.social-media-links a {
+  color: #f3e5f5;
+}
+
+.social-media-links a:active, .social-media-links a:hover {
+  color: #212529;
+}
+
 .MIT-license {
   font-size: 10px;
   background-color: #8B7A53;
@@ -362,9 +371,7 @@ footer a:hover, footer a:active {
   text-decoration: none;
 }
 
-.social-media-links a {
-  color: white;
-}
+
 /* --End of index.html styles----------------- */
 
 /* --Start of dinner-menu.html and lunch-menu.html styles---- */
