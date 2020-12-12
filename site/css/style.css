@@ -1,8 +1,8 @@
 /* Custom style sheet for Daphnes_Restaurant/site/
     > index.html
-    > lunch-menu.html
-    > dinner-menu.html
-    > set-menu.html
+    > menu/lunch-menu.html
+    > menu/dinner-menu.html
+    > menu/set-menu.html
     > contact.html
     > terms-and-conditions.html
 
@@ -195,8 +195,6 @@ nav #phoneIcon {
 }
 
 #navOrderButton {
-  background: none;
-  border: none;
   font-size: 24px;
 }
 
@@ -336,6 +334,7 @@ nav #phoneIcon {
 
 .social-media-links a {
   color: #f3e5f5;
+  font-size: 1.8rem;
 }
 
 .social-media-links a:active, .social-media-links a:hover {
@@ -537,10 +536,6 @@ h5 {
   .nav-item .dropdown-menu {
     font-size: 14px;
   }
-  #navOrderButton {
-    background-color: #343A40;
-    border: 1px solid transparent;
-  }
   #heroButton a {
     font-size: 16px;
   }
@@ -575,10 +570,6 @@ h5 {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #navOrderButton:hover {
-    background-color: #23272B;
-    border-color: #1D2124;
-  }
   #copy h1 {
     font-size: 27px;
   }
@@ -590,9 +581,6 @@ h5 {
   }
   .open-hours li span {
   font-size: 16px;
-  }
-  .social-media-links i {
-    font-size: 1.2rem;
   }
   #verticalMenuNav h2 {
   font-size: 1.5rem;
